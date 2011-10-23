@@ -140,9 +140,6 @@ body {
 	font-weight:bold;
 }
 
-#path a:hover{
-	text-decoration:underline;
-}
 
 #basket{
     float: right;
