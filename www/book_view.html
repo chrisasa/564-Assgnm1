@@ -22,8 +22,8 @@
             <div id="search">
                 <form name="search" action="#" method="post">
                     <label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
-                    <input type="text" id="searchField" title="Εισαγωγή οποιουδήποτε όρου που σχετίζεται με το βιβλίο, για παράδειγμα isbn,τίτλος, συγγραφέας κ.τ.λ." />
-                    <input type="submit" id="searchButton" value="Αναζήτηση&raquo;" />
+                    <input type="text" id="searchField" />
+                    <input type="submit" id="searchButton" title="Εκίνηση Αναζήτησης" value="Αναζήτηση&raquo;" />
                     
                 </form>
                 <a href="#">Σύνθετη Αναζήτηση &raquo;</a>
@@ -130,16 +130,29 @@
                         </legend>
                         
                         <form action="form_action.asp" method="post">
-                            <label for="comments_name">Το όνομα σας *</label>
+                            <label for="comments_name">
+                                <span class="hidden">αστερίσκος</span>
+                                <span class="red">* </span>
+                                Το όνομα σας
+                            </label>
+                            
                             <input type="text" name="comments_name" id="comments_name" style=""></input>
 
-                            <label for="comment_email">Το email σας</label>
+                            <label for="comment_email">
+                                <span class="hidden">αστερίσκος</span>
+                                <span class="red">* </span>
+                                Το email σας
+                            </label>
                             <input type="text" name="comment_email" id="comment_email"></input>
 
-                            <label for="comment_text">Tα σχόλια σας *</label>
+                            <label for="comment_text">
+                                <span class="hidden">αστερίσκος</span>
+                                <span class="red">* </span>
+                                Tα σχόλια σας
+                            </label>
                             <textarea id="comment_text" name="comment_text">&nbsp;</textarea>
                             
-                            <input type="submit" value="Submit Comment" id="comment_submit"></input>
+                            <input type="submit" value="Submit Comment" title="Υποβολή σχόλιου" id="comment_submit"></input>
                         </form>
                         
                     </fieldset>
