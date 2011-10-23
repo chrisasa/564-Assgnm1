@@ -61,6 +61,19 @@ select:focus,input[type=checkbox]:focus + label, input[type=radio]:focus + label
 	color: rgb(0, 0, 0);
 }
 
+a:hover img, a:focus img { 
+	border: 1px solid blue; 
+}
+
+.hidden, #hidden { 
+height: 1px;
+left: -10000px;
+overflow-x: hidden;
+overflow-y: hidden;
+position: absolute;
+top: auto;
+width: 1px;
+}
 
 #search a{
     float:right;
