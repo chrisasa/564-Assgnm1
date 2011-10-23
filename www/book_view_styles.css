@@ -113,7 +113,7 @@
 */
 #bookSuggestions {
     border-bottom: 1px dashed black;
-    margin-top: 1.5em;
+    margin-top: 1em;
     padding-bottom: 1.5em;
     overflow: auto;
 }
@@ -128,16 +128,18 @@
 }
 
 #bookSuggestView {
+    height: 12em;
     display: block;
     margin-left: 0.5em;
     margin-right: 0.5em;
-    border: 1px solid black;
     overflow: auto;
 }
 
 #bookSuggestView img{
-    width: 15%;
+    width: auto;
+    height: 100%;
     margin-left: 0.5em;
+    margin-right: 0.5em;
     float: left;
 }
 
