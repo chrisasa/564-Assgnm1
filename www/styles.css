@@ -55,9 +55,10 @@ body {
 }
 
 
-#search input:focus, textarea:focus{
-    border: 2px solid red;
-    background-color: #ffcc66;
+select:focus,input[type=checkbox]:focus + label, input[type=radio]:focus + label,input:focus, textarea:focus{
+    border: 1px solid red;
+	background-color: rgb(255, 255, 128);
+	color: rgb(0, 0, 0);
 }
 
 
@@ -180,6 +181,13 @@ body {
 #maincolumn{
 	float:right;
 	width:80%;
+}
+
+#maincolumn h2{
+	margin-top:0;
+	padding:0.2em;
+	border-bottom:3px double #333333;
+	
 }
 
 #maincoltop h2{

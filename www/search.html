@@ -53,6 +53,22 @@
         	
             <div id="maincolumn">
             	<h2>Σύνθετη Αναζήτηση</h2>
+                <form name="detailedsearch" action="http://results.html" method="post">
+              		<fieldset>
+                    <legend>Σύνθετη Αναζήτηση</legend>
+                        <label for="category">Κατηγορία:</label>
+                          <select name="category" id="cat">
+                            <option value="1">Όλες οι κατηγορίες</option>
+                            <option value="2">Λογοτεχνικά</option>
+                            <option value="3">Επιστημονικά</option> 
+                            <option value="4">Μυθιστορήματα</option>
+                            <option value="5">...</option>
+                          </select>
+                        <label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
+                        <input type="text" id="searchField" title="Εισαγωγή οποιουδήποτε όρου που σχετίζεται με το βιβλίο, για παράδειγμα isbn,τίτλος, συγγραφέας κ.τ.λ." />
+                        <input type="submit" id="searchButton" value="Αναζήτηση&raquo;" />
+                    </fieldset>
+                </form>
         	</div>
             
             <div id="leftcolumn">
