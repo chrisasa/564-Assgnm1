@@ -56,9 +56,9 @@ body {
 
 
 select:focus,input[type=checkbox]:focus + label, input[type=radio]:focus + label,input:focus, textarea:focus{
-    border: 1px solid red;
-	background-color: rgb(255, 255, 128);
-	color: rgb(0, 0, 0);
+    border: 1px solid red !important;
+	background-color: rgb(255, 255, 128) !important;
+	color: rgb(0, 0, 0) !important;
 }
 
 a:hover img, a:focus img { 
@@ -451,4 +451,8 @@ width: 1px;
 
 #resultsbottom a:hover{
 	text-decoration:underline;
+}
+
+.red{
+	color:red;
 }

@@ -21,8 +21,8 @@
             <div id="search">
                 <form name="input" action="#" method="get">
                     <label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
-                    <input type="text" id="searchField" title="Εισαγωγή οποιουδήποτε όρου που σχετίζεται με το βιβλίο, για παράδειγμα isbn,τίτλος, συγγραφέας κ.τ.λ." />
-                    <input type="submit" id="searchButton" value="Αναζήτηση&raquo;" />
+                    <input type="text" id="searchField" />
+                    <input type="submit" id="searchButton" title="Εκκίνηση αναζήτησης" value="Αναζήτηση&raquo;" />
                     
                 </form>
                 <a href="#">Σύνθετη Αναζήτηση &raquo;</a>
@@ -56,17 +56,25 @@
                 <form name="detailedsearch" action="http://results.html" method="post">
               		<fieldset>
                     <legend>Εισάγετε τα πεδία της σύνθετης αναζήτησης</legend>
-                        <label for="category">Κατηγορία:</label>
-                          <select name="category" id="category">
-                            <option value="1">Όλες οι κατηγορίες</option>
-                            <option value="2">Λογοτεχνικά</option>
-                            <option value="3">Επιστημονικά</option> 
-                            <option value="4">Μυθιστορήματα</option>
-                            <option value="5">...</option>
-                          </select>
-                        <label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
-                        <input type="text" id="searchField" title="Εισαγωγή οποιουδήποτε όρου που σχετίζεται με το βιβλίο, για παράδειγμα isbn,τίτλος, συγγραφέας κ.τ.λ." />
-                        <input type="submit" id="searchButton" value="Αναζήτηση&raquo;" />
+                    	<div class="ffield">
+                            <label for="category">Κατηγορία βιβλίου:</label>
+                              <select name="category" id="category">
+                                <option value="1">Όλες οι κατηγορίες</option>
+                                <option value="2">Λογοτεχνικά</option>
+                                <option value="3">Επιστημονικά</option> 
+                                <option value="4">Μυθιστορήματα</option>
+                                <option value="5">...</option>
+                              </select>
+                        </div>
+                        <div class="ffield">
+                        	<span class="hidden">αστερίσκος</span>
+							<span class="red">* </span>
+                        	<label for="terms">Λέξεις αναζήτησης:</label> <!--h44 rule-->
+                        	<input type="text" id="terms"/>
+                        </div>
+                        <div class="ffield">
+                        <input type="submit" id="detailedsearchButton" title="Εκκίνηση σύνθετης αναζήτησης" value="Αναζήτηση&raquo;" />
+                      	</div>
                     </fieldset>
                 </form>
         	</div>
