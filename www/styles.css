@@ -403,6 +403,7 @@ body {
 .resultstop{
 	width:98%;
 	border:1px solid #333333;
+	background-color:#d2cdc7;
 	padding:0.5em;
 	margin-bottom:0.5em;
 }
