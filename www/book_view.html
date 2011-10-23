@@ -129,7 +129,7 @@
                           <span>Προσθέστε το δικό σας σχόλιο</span>
                         </legend>
                         
-                        <form action="form_action.asp" method="get">
+                        <form action="form_action.asp" method="post">
                             <label for="comments_name">Το όνομα σας *</label>
                             <input type="text" name="comments_name" id="comments_name" style=""></input>
 
@@ -138,7 +138,8 @@
 
                             <label for="comment_text">Tα σχόλια σας *</label>
                             <textarea id="comment_text" name="comment_text">&nbsp;</textarea>
-                            <input type="submit" value="Submit Comment"></input>
+                            
+                            <input type="submit" value="Submit Comment" id="comment_submit"></input>
                         </form>
                         
                     </fieldset>

@@ -221,18 +221,45 @@
     border-bottom:1px solid #333333;
 }
 
+#newComment fieldset {
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
-#comment_email {
+#newComment label {
+    clear: both;
     display: block;
-    max-width:524px; 
-    width:524px; 
-    margin-bottom:5px;
+    float: left;
 }
 
 #comments_name {
-    max-width:524px; 
-    width:524px; 
+    display: block;
+    width:70%; 
     margin-bottom:5px;
+    float: right;
+}
+
+#comment_email {
+    display: block;
+    width:70%; 
+    margin-bottom:5px;
+    float: right;
+}
+
+#comment_text {
+    display: block;
+    width: 70%;
+    resize: none;
+    margin-bottom:5px;
+    float: right;
+}
+
+#comment_submit {
+    clear: both;
+    display: block;
+    width:auto; 
+    margin-bottom:5px;
+    float: right;
 }
 
 
