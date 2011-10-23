@@ -52,7 +52,19 @@
         	
             <div id="maincolumn">
             	<div class="resultstop">
-                	Βρέθηκαν: <span>23</span> αποτελέσματα για τον όρο "Steve Jobs".
+                	<span>Βρέθηκαν: <span id="bold">23</span> αποτελέσματα για τον όρο "Steve Jobs"</span>.
+                    <form id="sortform" action="http://results.html" method="post">
+                     <label for="sort">Ταξινόμηση:</label>
+                      <select name="sort" id="sort">
+                        <option value="1">Τιμή Αύξουσα</option>
+                        <option value="2">Τιμή Φθίνουσα</option> 
+                        <option value="3">Αλφαβητικά(Α-Ω, A-W)</option>
+                        <option value="4">Αλφαβητικά(W-A, Ω-Α)</option>
+                        <option value="5">Ημερομηνία έκδοσης</option>
+                        <option value="6">Περισσότερες πωλήσεις</option>
+                      </select>
+                      <input type="button" value="Εύρεση">
+                     </form>
                 </div>
                 <div class="resultbox">
                 	<div class="resultinsideleft">

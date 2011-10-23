@@ -408,6 +408,11 @@ body {
 	margin-bottom:0.5em;
 }
 
-.resultstop span{
+#bold{
 	font-weight:bold;
+}
+#sortform{
+	float:right;
+	position:relative;
+	top:-0.2em;
 }
