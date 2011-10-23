@@ -116,37 +116,31 @@
 /*  Book suggestions column
 */
 #bookSuggestions {
-    border-bottom: 1px dashed black;
     margin-top: 1em;
     padding-bottom: 1.5em;
     overflow: auto;
 }
 
 #bookSuggestions h2{
-    clear: both;
-    display: inline-block;
-    margin-top:0.5em;
-    margin-bottom: 0.4em;
-    margin-left: 0.7em;
+    margin-top:0;
+    padding:0.2em;
+    margin-right: 0.5em;
     border-bottom:3px double #333333;
 }
 
-#bookSuggestView {
-    height: 12em;
-    display: block;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+.bookSuggestView {
     overflow: auto;
+    width: 100%;
 }
 
-#bookSuggestView img{
-    width: auto;
-    height: 100%;
+.bookSuggestView img{
+    width: 40%;
+    margin-top: 0.7em;
+    margin-bottom: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
     float: left;
 }
-
 
 
 
