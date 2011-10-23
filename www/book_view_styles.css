@@ -90,9 +90,6 @@
 #bookDescription {
     clear: both;
     margin-top: 0.5em;
-    padding-bottom: 1.5em;
-    border-bottom:1px solid #333333;
-    border-bottom:1px dashed #333333;
 }
 
 #bookDescription h2{
@@ -166,8 +163,16 @@
 }
 
 #comment {
-    margin-bottom: 1.2em;
+    border-bottom: 1px dashed black;
+    padding-bottom: 1em;
+    margin-top: 0.2em;
 }
+
+#LASTcomment {
+    padding-bottom: 1em;
+    margin-top: 0.2em;
+}
+
 
 .comUsername {
     display: inline-block;
@@ -192,5 +197,44 @@
     text-align: justify;
     margin-right: 1em;
     margin-left: 1em;
-    
 }
+
+
+
+
+
+
+/*  New comment field
+*/
+
+#newComment {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#newComment h2{
+    clear: both;
+    display: block;
+    margin-top:0.5em;
+    margin-bottom: 0.4em;
+    margin-left: 0.7em;
+    border-bottom:1px solid #333333;
+}
+
+
+#comment_email {
+    display: block;
+    max-width:524px; 
+    width:524px; 
+    margin-bottom:5px;
+}
+
+#comments_name {
+    max-width:524px; 
+    width:524px; 
+    margin-bottom:5px;
+}
+
+
+
+

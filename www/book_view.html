@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html ; charset=utf-8" />
 <meta http-equiv ="Content-Language" Content="el" />
+<meta name="description" content="Διαδικτυακός τόπος του βιβλιοπωλείου Γκρέισ."/>
 <meta name="keywords" content="βιβλία,best seller, βιβλιοπωλείο, γκρεις, λογοτεχνία, ποίηση" />
 <title>Αρχική σελίδα | Βιβλιοπωλείο Γκρέισ</title>
 
@@ -19,7 +20,7 @@
             	<a href="index.html"> <img src="pics/logo.png" alt="Λογότυπο Βιβλιοπολείου Ειρμός" title="Λογότυπο Βιβλιοπολείου Ειρμός"/></a>
             </div>
             <div id="search">
-                <form name="input" action="#" method="get">
+                <form name="search" action="#" method="post">
                     <label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
                     <input type="text" id="searchField" title="Εισαγωγή οποιουδήποτε όρου που σχετίζεται με το βιβλίο, για παράδειγμα isbn,τίτλος, συγγραφέας κ.τ.λ." />
                     <input type="submit" id="searchButton" value="Αναζήτηση&raquo;" />
@@ -34,7 +35,7 @@
         <div id="mainmenu">
         	<ul id="ul_main_menu">
                     <li><a href="#">Αρχική</a></li>
-                    <li id="activeMainMenu"><a href="#">Λογοτεχνία</a></li>
+                    <li id="activeMainMenu">Λογοτεχνία</li>
                     <li><a href="#">Επιστημονικά</a></li>
                     <li><a href="#">Επικοινωνία</a></li>        		
         	</ul>
@@ -106,7 +107,7 @@
                         <span class="comText">Before I began reading this book I was concerned it may be another "the sky is warming, the sky is warming!", greenhouse gas caused disaster novel. One cannot judge a book by its cover however, and I decided to push through. I was pleasantly surprised at the different concept Baxter uses to flood the earth. The book opens in Barcelona where we meet several of the main characters who will we follow through their adventures to survive. I never really understood exactly why these people are hostages. Their backgrounds are rather random from a hostage-takers point of view. Shortly after the introduction of the hostages a rich, visionary mogul appears on the scene with an inexplicable interest in them</span>
                     </div>
                     
-                    <div id="comment">
+                    <div id="LASTcomment">
                         <span class="comUsername">Christos Asaridis</span>
                         <span class="comRatting">
                             Βαθμολογία:
@@ -115,11 +116,36 @@
                         <span class="comText">Before I began reading this book I was concerned it may be another "the sky is warming, the sky is warming!", greenhouse gas caused disaster novel. One cannot judge a book by its cover however, and I decided to push through. I was pleasantly surprised at the different concept Baxter uses to flood the earth. The book opens in Barcelona where we meet several of the main characters who will we follow through their adventures to survive. I never really understood exactly why these people are hostages. Their backgrounds are rather random from a hostage-takers point of view. Shortly after the introduction of the hostages a rich, visionary mogul appears on the scene with an inexplicable interest in them</span>
                     </div>
                     
-                    <div id="newComment">
-                        
-                    </div>
                     
                 </div>
+                
+                
+                <div id="newComment">
+                    <h2>Προσθήκη νέου σχόλιου</h2>
+
+                    <fieldset>
+
+                        <legend>
+                          <span>Προσθέστε το δικό σας σχόλιο</span>
+                        </legend>
+                        
+                        <form action="form_action.asp" method="get">
+                            <label for="comments_name">Το όνομα σας *</label>
+                            <input type="text" name="comments_name" id="comments_name" style=""></input>
+
+                            <label for="comment_email">Το email σας</label>
+                            <input type="text" name="comment_email" id="comment_email"></input>
+
+                            <label for="comment_text">Tα σχόλια σας *</label>
+                            <textarea id="comment_text" name="comment_text">&nbsp;</textarea>
+                            <input type="submit" value="Submit Comment"></input>
+                        </form>
+                        
+                    </fieldset>
+
+
+                </div>
+                
             
             
             </div>
