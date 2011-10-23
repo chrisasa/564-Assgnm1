@@ -14,65 +14,177 @@
 <body>
     <div id="wrapper">
         
-        <div id="OCbooks">
-            <div id="bookConfirmation">
-                <img alt="" class="OCcover" title="" src="imgbooks/book_1.jpg"/>
-
-                <div id="OCspecifics">
-                    <span class="OCtitle">ΚΑΤΑΚΛΥΣΜΟΣ</span>
-                    <span class="OCauthor">Μπάξτερ Στεφεν</span>
-                    <span class="OCpublication">Εκδόσεις: Αίολος</span>
-                    <span class="OCyear">Ημερομηνία έκδοσης: Μάρτιος 2011</span>
-                    <span class="OCisbn">ISBN: 9789605212</span>
-                    <span class="OCprice">Τιμή: <span>29,27€</span></span>
-                </div>
+    	
+        <!-- Header -->
+        <div id="header">
+            <div id="logo">
+            	<a href="index.html"> <img src="pics/logo.png" alt="Λογότυπο Βιβλιοπολείου Ειρμός" title="Λογότυπο Βιβλιοπολείου Ειρμός"/></a>
             </div>
-            <div id="bookConfirmation">
-                <img alt="" class="OCcover" title="" src="imgbooks/book_2.jpg"/>
+            <div id="search">
+                <form name="input" action="#" method="get">
+                    <label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
+                    <input type="text" id="searchField" title="Εισαγωγή οποιουδήποτε όρου που σχετίζεται με το βιβλίο, για παράδειγμα isbn,τίτλος, συγγραφέας κ.τ.λ." />
+                    <input type="submit" id="searchButton" value="Αναζήτηση&raquo;" />
+                    
+                </form>
+                <a href="#">Σύνθετη Αναζήτηση &raquo;</a>
+            </div>
+        </div>
+        
+        
+        <!-- Main menu -->
+        <div id="mainmenu">
+        	<ul id="ul_main_menu">
+        		<li id="activeMainMenu">Αρχική</li>
+        		<li><a href="#">Λογοτεχνία</a></li>
+        		<li><a href="#">Επιστημονικά</a></li>
+        		<li><a href="#">Επικοινωνία</a></li>        		
+        	</ul>
+        </div>
+        
+        
+        <!-- Sub menu -->
+        <div id="submenu">
+			<span id="path">Βρίσκεστε: Αρχική Σελίδα</span>
+                        <a id="basket" href="#"><span>Το καλάθι μου</span> ( 0 προϊόντα <span>0,00 €</span> )</a>
+        </div>
+        
+        
+        <!-- Main page-->
+        <div id="main">
+        	
+            
+            <div id="maincolumn">
+                
+                <div id="OCbooks">
+                    <div id="bookConfirmation">
+                        <img alt="" class="OCcover" title="" src="imgbooks/book_1.jpg"/>
 
-                <div id="OCspecifics">
-                    <span class="OCtitle">ΚΑΤΑΚΛΥΣΜΟΣ</span>
-                    <span class="OCauthor">Μπάξτερ Στεφεν</span>
-                    <span class="OCpublication">Εκδόσεις: Αίολος</span>
-                    <span class="OCyear">Ημερομηνία έκδοσης: Μάρτιος 2011</span>
-                    <span class="OCisbn">ISBN: 9789605212</span>
-                    <span class="OCprice">Τιμή: <span>29,27€</span></span>
+                        <div id="OCspecifics">
+                            <span class="OCtitle">ΚΑΤΑΚΛΥΣΜΟΣ</span>
+                            <span class="OCauthor">Μπάξτερ Στεφεν</span>
+                            <span class="OCisbn">ISBN: 9789605212</span>
+                            <span class="OCprice">Τιμή: <span>29,27€</span></span>
+                        </div>
+                    </div>
+                    <div id="bookConfirmation">
+                        <img alt="" class="OCcover" title="" src="imgbooks/book_2.jpg"/>
+
+                        <div id="OCspecifics">
+                            <span class="OCtitle">ΚΑΤΑΚΛΥΣΜΟΣ</span>
+                            <span class="OCauthor">Μπάξτερ Στεφεν</span>
+                            <span class="OCisbn">ISBN: 9789605212</span>
+                            <span class="OCprice">Τιμή: <span>29,27€</span></span>
+                        </div>
+                    </div>
+
+                    <div id="LASTbookConfirmation">
+                        <img alt="" class="OCcover" title="" src="imgbooks/book_3.jpg"/>
+
+                        <div id="OCspecifics">
+                            <span class="OCtitle">ΚΑΤΑΚΛΥΣΜΟΣ</span>
+                            <span class="OCauthor">Μπάξτερ Στεφεν</span>
+                            <span class="OCisbn">ISBN: 9789605212</span>
+                            <span class="OCprice">Τιμή: <span>29,27€</span></span>
+                        </div>
+                    </div>
+
                 </div>
+
+                <div id="OCcostumer">
+
+                    <div id="costumer">
+
+                        <span id="name"></span>
+                        <span id="subname"></span>
+                        <span id="address"></span>
+                        <span id="tk"></span>
+                        <span id=""></span>
+                        <span id=""></span>
+                        <span id=""></span>
+                        <span id=""></span>
+                        <span id=""></span>
+                        <span id=""></span>
+
+                    </div>
+
+                </div>
+            
+            
             </div>
             
-            <div id="LASTbookConfirmation">
-                <img alt="" class="OCcover" title="" src="imgbooks/book_3.jpg"/>
-
-                <div id="OCspecifics">
-                    <span class="OCtitle">ΚΑΤΑΚΛΥΣΜΟΣ</span>
-                    <span class="OCauthor">Μπάξτερ Στεφεν</span>
-                    <span class="OCpublication">Εκδόσεις: Αίολος</span>
-                    <span class="OCyear">Ημερομηνία έκδοσης: Μάρτιος 2011</span>
-                    <span class="OCisbn">ISBN: 9789605212</span>
-                    <span class="OCprice">Τιμή: <span>29,27€</span></span>
+            
+            
+            
+            
+            <div id="leftcolumn">
+                
+                <div id="bestSeller">
+                    
+                    <h2>Best Sellers</h2>
+                    
+                    <div class="bestbooksline">
+                        <div class="bestSellerBookpreview">
+                            <a href="#"><img alt="" title="" src="imgbooks/book_2.jpg"/></a>
+                        </div>
+                        <div class="bestSellerBookpreview">
+                            <a href="#"><img alt="" title="" src="imgbooks/book_2.jpg"/></a>
+                        </div>
+                    </div>
+                    
+                    <div class="bestbooksline">
+                        <div class="bestSellerBookpreview">
+                            <a href="#"><img alt="" title="" src="imgbooks/book_3.jpg"/></a>
+                        </div>
+                        <div class="bestSellerBookpreview">
+                            <a href="#"><img alt="" title="" src="imgbooks/book_3.jpg"/></a>
+                        </div>
+                    </div>
+                    
+                    <div class="bestbooksline">
+                        <div class="bestSellerBookpreview">
+                            <a href="#"><img alt="" title="" src="imgbooks/book_5.jpg"/></a>
+                        </div>
+                        <div class="bestSellerBookpreview">
+                            <a href="#"><img alt="" title="" src="imgbooks/book_5.jpg"/></a>
+                        </div>
+                    </div>
+                        
                 </div>
+                
+                <div id="writer">
+                    <h2>Γνωρίστε τον</h2>
+                    <img alt="" title="" src="pics/Gatsos.jpg" />
+                    <p>Νίκος Γκάτσος
+                        Φέτος, 100 χρόνια από την γέννηση του μεγάλου Έλληνα ποιητή και στιχουργού Νίκου Γκάτσου. Ο Γκάτσος γεννήθηκε στην Αρκαδία στις 8 Δεκεμβρίου του 1911. Τελείωσε το Γυμνάσιο στην Τρίπολη και το 1930 εγγράφηκε στην Φιλοσοφική Σχολή του Πανεπιστημίου Αθηνών. Στην Αθήνα πρωτοήρθε σε επαφή με τους λογοτεχνικούς κύκλους της εποχής. Πρωτοδημοσίευσε ποιήματά του στο περιοδικό Νέα Εστία το 1931. 
+                    </p>
+                    <a href="#">Βιβλία του συγγραφέα &raquo;</a>
+                </div>
+                
             </div>
             
         </div>
         
-        <div id="OCcostumer">
-            
-            <div id="costumer">
-                
-                <span id="name"></span>
-                <span id="subname"></span>
-                <span id="address"></span>
-                <span id="tk"></span>
-                <span id=""></span>
-                <span id=""></span>
-                <span id=""></span>
-                <span id=""></span>
-                <span id=""></span>
-                <span id=""></span>
-                
+        
+        <!-- Footer -->
+        <div id="footer">
+            <div id="validators">
+                <span>Ο ιστοχώρος συμμορφώνεται με τα διεθνή πρότυπα προσβασιμότητας</span>
+                <div class="valid_images">
+                    <a href="http://validator.w3.org/" title="έγκυρη χρήση XHTML 1.0"><img src="pics/xhtml_1_0.gif" alt="έγκυρη χρήση XHTML 1.0"/></a>
+                    <a href="http://jigsaw.w3.org/css-validator/" title="έγκυρη χρήση CSS"><img src="pics/css.gif" alt="έγκυρη χρήση CSS" /></a>
+                    <a href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of Level Double-A Conformance"><img alt="Level Double-A conformance icon, W3C-WAI Web Content Accessibility Guidelines 2.0" src="pics/wcag_2_0.gif" /></a>
+                </div>
             </div>
-            
         </div>
+        
+    </div>
+        
+        
+        
+        
+        
+        
         
         
         

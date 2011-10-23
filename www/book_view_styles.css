@@ -96,11 +96,12 @@
 }
 
 #bookDescription h2{
-    display: inline-block;
+    display: block;
     margin-top:0.5em;
     margin-bottom: 0.4em;
     margin-left: 0.7em;
-    border-bottom:3px double #333333;
+    padding-bottom: 0.2em;
+    border-bottom:1px solid #333333;
 }
 
 #bookDescription p{
@@ -161,6 +162,14 @@
     margin-bottom: 0.5em;
 }
 
+#bookComments h2{
+    clear: both;
+    display: block;
+    margin-top:0.5em;
+    margin-bottom: 0.4em;
+    margin-left: 0.7em;
+    border-bottom:1px solid #333333;
+}
 
 #comment {
     margin-bottom: 1.2em;
