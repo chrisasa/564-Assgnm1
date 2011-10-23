@@ -1,0 +1,440 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {	
+    font-family: Verdana, Geneva, sans-serif;
+	font-size:0.8em;
+    background: #fff;
+	text-align: left;
+	color: #333333;
+	text-decoration:none;
+}
+
+#wrapper{
+	max-width: 1024px;
+	min-width: 930px;
+	margin: 0 auto;
+	overflow:auto;
+}
+
+
+/* Header menu partition
+*/
+
+#header{
+	width:100%;
+	height: 8em;
+	background-color:#fff;
+	margin-top:0;
+}
+
+#logo{
+    display: inline-block;
+}
+
+#search{
+    float: right;
+    margin-top: 5em;
+}
+
+#search label{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    overflow:hidden;
+}
+
+
+#searchField{
+    height: 1.5em;
+    width: 15em;
+}
+
+#searchButton {
+    height: 2.2em;
+}
+
+
+#search input:focus, textarea:focus{
+    border: 2px solid red;
+    background-color: #ffcc66;
+}
+
+
+#search a{
+    float:right;
+    display: block;
+    margin-top: 0.7em;
+    text-decoration:none;
+    color:#333333;
+}
+
+#search a:hover{
+	text-decoration:underline;
+}
+
+
+
+
+/* Main menu partition
+*/
+
+#mainmenu{
+    margin-top:2em;
+	width: 100%;
+	background-color: #333333;
+	border-bottom:0.2em solid #ad0101;
+}
+
+#ul_main_menu{
+	margin:0;
+	padding:0.8em 0em 0.8em 4.5em;
+	list-style-type:none;
+}
+
+#ul_main_menu li{
+	display:inline;
+	padding-right:0.8em;
+}
+#ul_main_menu li a{
+	text-decoration:none;
+	font-size: 1.4em;
+	color: #ffffff;
+}
+
+#ul_main_menu li a:hover{
+    border-bottom: 1px dotted white;
+}
+
+
+#activeMainMenu{
+    padding: 0.6em;
+    background-color: #fff;
+    
+    text-decoration:none;
+    font-size: 1.4em;
+    color:#333333;
+}
+
+/* Sub menu partition
+*/
+#submenu{
+	
+	width:100%;
+    height: 1.2em;
+	background-color: #fff;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+	display: inline-block;
+}
+
+#path {	
+    padding-left: 0.4em;
+    float: left;
+    color: #000;
+}
+
+#path a{
+	text-decoration:none;
+	color:#333333;
+	font-weight:bold;
+}
+
+#path a:hover{
+	text-decoration:underline;
+}
+
+#basket{
+    float: right;
+    text-decoration: none;
+    color: #333333;
+    margin-right: 0.4em;
+}
+
+#submenu a:hover{
+    border-bottom: 1px solid #000;
+}
+
+#basket span{
+    font-weight: bold;
+}
+
+
+/*  Main partition
+*/
+
+#main{
+    clear: both;
+	margin-top:0.5em;
+	overflow:auto;
+}
+
+/*  Left column partition
+*/
+#leftcolumn{
+	
+	width:19%;
+	border-right:1px solid #333333;
+	float:left;
+}
+
+
+/*  Main column partition
+*/
+#maincolumn{
+	float:right;
+	width:80%;
+}
+
+#maincoltop h2{
+	margin-top:0;
+	padding:0.2em;
+	border-bottom:3px double #333333;
+	
+}
+
+#maincolbottom{
+	clear:both;
+}
+#maincolbottom h2{
+	padding:0.2em;
+	border-bottom:3px double #333333;
+	
+}
+
+
+/*  Footer partition
+*/
+#footer{
+	clear:both;
+	margin-top:0.4em;
+	width: 100%;
+	background-color: #333333;
+	border-top:0.2em solid #ad0101;
+        color: #cccccc;
+	height:auto;
+        overflow: auto;
+}
+
+#validators{
+	margin-right:0.8em;
+}
+#validators span{
+    font-style: italic;
+    float: right;
+}
+
+.valid_images {
+	clear:both;
+    float: right;
+}
+
+
+
+
+
+/* Books preview
+*/
+
+.booksline {
+    overflow: auto;
+    height: auto;
+}
+
+.bookpreview{
+	
+	border:1px solid #333333;
+	width: 31.5%;
+	margin:0.5em;
+	float:left;
+}
+
+.bookpreview img{
+	width:8em;
+	height:12em;
+	float:left;
+	padding-right:0.2em;
+}
+
+.title a{
+	text-decoration:none;
+	color:#ad0101;	
+	font-weight: bold;
+}
+
+.title a:hover{
+	text-decoration:underline;
+	color:#ad0101;	
+}
+
+.author{
+	display:block;
+	font-size:0.9em;
+}
+
+.publication{
+	display:block;
+	margin-top: 1.5em;
+}
+
+.isbn{
+	display:block;
+}
+
+.price{
+	display:block;
+}
+
+.price span{
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.addToCart{
+	display:block;
+	margin-top: 1.5em;
+}
+
+.addToCart a{
+	text-decoration:none;
+	color:#333333;
+	font-weight:bold;
+}
+
+.addToCart a:hover{
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+#bestSeller h2{
+    margin-top:0;
+    padding:0.2em;
+    margin-right: 0.5em;
+    border-bottom:3px double #333333;
+}
+
+.bestbooksline {
+    overflow: auto;
+    width: 100%;
+}
+
+.bestSellerBookpreview img{
+    width: 40%;
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    float: left;
+}
+
+#writer h2{
+    padding:0.2em;
+    margin-right: 0.5em;
+    border-bottom:3px double #333333;
+}
+
+#writer p{
+    text-align: justify;
+    padding-right: 1em;
+}
+
+#writer img{
+    width: 5em;
+    float: left;
+    margin-right: 0.7em;
+}
+
+#writer a{
+	text-decoration:none;
+	color:#333333;
+        float: right;
+        padding-right: 1em;
+        font-weight: bold;
+}
+
+#writer a:hover{
+	text-decoration:underline;
+}
+
+.resultbox{
+	border-bottom:1px dashed #333333;
+	width:96%;
+	padding:1em;
+	overflow:auto;
+}
+
+.resultbox img{
+	width: 6em;
+	display:block;
+	margin-right:0.5em;
+	float:left;
+}
+
+.resultinsideleft{
+	float:left;
+	width:30%;
+}
+
+.resultbox p{
+	width:68%;
+	float:right;
+	text-align: justify;
+}
+
+.rbottom{
+	float:right;
+}
+
+.rbottom a{
+	text-decoration:none;
+	color:#333333;
+	font-weight:bold;
+}
+
+.rbottom a:hover{
+	text-decoration:underline;
+}
+
+.resultstop{
+	width:98%;
+	border:1px solid #333333;
+	background-color:#d2cdc7;
+	padding:0.3em;
+	margin-bottom:0.5em;
+	overflow:auto;
+}
+
+#bold{
+	font-weight:bold;
+}
+
+#found{
+	float:left;
+	padding-top:0.3em;
+}
+#sortform{
+	float:right;
+}
+
+#resultsbottom{
+	margin: 2em 0;
+}
+
+#resultsbottom a{
+	margin:0.2em;
+	text-decoration:none;
+	color:#333333;
+	font-weight:bold;
+}
+
+#resultsbottom a:hover{
+	text-decoration:underline;
+}
+
+
+dokimi
