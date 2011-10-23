@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#bookCharacteristics {
+    overflow: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+
+.BVcover {
+    float: left;
+    padding: 1em;
+}
+
+
+#specifics {
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+
+
+
+.BVtitle a{
+	text-decoration:none;
+	color:#ad0101;	
+	font-weight: bold;
+        margin-top: 1em;
+}
+
+.BVtitle a:hover{
+	text-decoration:underline;
+	color:#ad0101;	
+}
+
+.BVauthor{
+	display:block;
+	font-size:0.9em;
+}
+
+.BVpublication{
+	display:block;
+	margin-top: 1.5em;
+}
+
+.BVisbn{
+	display:block;
+}
+
+.BVprice{
+	display:block;
+}
+
+.BVprice span{
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.BVaddToCart{
+	display:block;
+	margin-top: 1.5em;
+}
+
+.BVaddToCart a{
+	text-decoration:none;
+	color:#333333;
+	font-weight:bold;
+}
+
+.BVaddToCart a:hover{
+	text-decoration:underline;
+}
+
+
+
+
+
+
+/*  Description column
+*/
+
+
+#bookDescription {
+    clear: both;
+    margin-top: 0.5em;
+    padding-bottom: 1.5em;
+    border-bottom:1px solid #333333;
+    border-bottom:1px dashed #333333;
+}
+
+#bookDescription h2{
+    display: inline-block;
+    margin-top:0.5em;
+    margin-bottom: 0.4em;
+    margin-left: 0.7em;
+    border-bottom:3px double #333333;
+}
+
+#bookDescription p{
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: justify;
+}
+
+
+
+/*  Book suggestions column
+*/
+#bookSuggestions {
+    border-bottom: 1px dashed black;
+    margin-top: 1.5em;
+    padding-bottom: 1.5em;
+    overflow: auto;
+}
+
+#bookSuggestions h2{
+    clear: both;
+    display: inline-block;
+    margin-top:0.5em;
+    margin-bottom: 0.4em;
+    margin-left: 0.7em;
+    border-bottom:3px double #333333;
+}
+
+#bookSuggestView {
+    display: block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+#bookSuggestView img{
+    width: 15%;
+    margin-left: 0.5em;
+    float: left;
+}
+
+
+
+
+
+
+
+
+/*  Costumer comments column
+*/
+
+#bookComments {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+
+#comment {
+    margin-bottom: 1.2em;
+}
+
+.comUsername {
+    display: inline-block;
+    font-size: 1.2em;
+    color: red;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    margin-left: 1em;
+}
+
+.comRatting{
+    float: right;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-right: 1em;
+}
+
+
+
+.comText {
+    display: block;
+    text-align: justify;
+    margin-right: 1em;
+    margin-left: 1em;
+    
+}
