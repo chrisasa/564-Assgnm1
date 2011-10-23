@@ -222,8 +222,9 @@
 }
 
 #newComment fieldset {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
 #newComment label {
@@ -234,7 +235,7 @@
 
 #comments_name {
     display: block;
-    width:70%; 
+    width:30em; 
     margin-bottom:5px;
     float: right;
 }
@@ -249,7 +250,9 @@
 #comment_text {
     display: block;
     width: 70%;
+    height: 10em;
     resize: none;
+    margin-left: 1em;
     margin-bottom:5px;
     float: right;
 }
