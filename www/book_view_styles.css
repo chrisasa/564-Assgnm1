@@ -34,7 +34,7 @@
 
 .BVtitle a:hover{
 	text-decoration:underline;
-	color:#ad0101;	
+	color: #ad0101;	
 }
 
 .BVauthor{
@@ -238,7 +238,7 @@
     width:  70%; 
     margin-bottom:5px;
     float: right;
-    border: 1px solid black;
+    border: 1px solid #333333;
 }
 
 #comment_email {
@@ -246,7 +246,7 @@
     width: 70%;
     margin-bottom:5px;
     float: right;
-    border: 1px solid black;
+    border: 1px solid #333333;
 }
 
 #comment_text {
@@ -256,15 +256,68 @@
     resize: none;
     margin-bottom:5px;
     float: right;
-    border: 1px solid black;
+    border: 1px solid #333333;
 }
 
-#comment_submit {
-    clear: both;
-    display: block;
+
+
+
+#comment_reset {
+    display: inline-block ;
     width:auto; 
+    margin-top: 1em;
+    margin-bottom:5px;
+    margin-right: 3em;
+    float: right;
+}
+
+
+#comment_submit {
+    font-weight: bold;
+    clear: both;
+    display: inline-block ;
+    width:auto; 
+    margin-top: 1em;
     margin-bottom:5px;
     float: right;
 }
 
 
+
+
+/*  Categories
+*/
+
+#bookCategories {
+    margin-top: 1em;
+    padding-bottom: 1.5em;
+    overflow: auto;
+}
+
+#bookCategories h2{
+    margin-top:0;
+    padding:0.2em;
+    margin-right: 0.5em;
+    border-bottom:3px double #333333;
+}
+
+#bookCategories ul{
+    list-style: none;
+    padding-left: 2.5em;
+}
+
+#bookCategories li a{
+    text-decoration:none;
+    font-size: 1.2em;
+    color: #333333;    
+}
+
+#bookCategories li a:hover{
+    border-bottom: 1px solid #333333;
+}
+
+#activeCatMenu {
+    list-style-image: url("pics/list-arrow.gif");
+    font-size: 1.2em;
+    color: #ad0101 !important;
+}
