@@ -11,10 +11,11 @@ body {
 }
 
 img{
-	border:1px solid white;
+	border:1px solid transparent;
 }
 
 .red{
+
 	color:red;
 }
 
@@ -60,12 +61,7 @@ width: 1px;
     display: inline-block;
 	
 }
-#logo img{
-	border:none;
-}
-#logo img:focus{
-	
-}
+
 #search{
     float: right;
     margin-top: 5em;
@@ -284,7 +280,7 @@ width: 1px;
 	width:8em;
 	height:12em;
 	float:left;
-	padding-right:0.2em;
+	margin-right:0.2em;
 }
 
 .title a{
