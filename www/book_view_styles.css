@@ -222,9 +222,9 @@
 }
 
 #newComment fieldset {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: auto;
 }
 
 #newComment label {
@@ -235,16 +235,18 @@
 
 #comments_name {
     display: block;
-    width:30em; 
+    width:  70%; 
     margin-bottom:5px;
     float: right;
+    border: 1px solid black;
 }
 
 #comment_email {
     display: block;
-    width:70%; 
+    width: 70%;
     margin-bottom:5px;
     float: right;
+    border: 1px solid black;
 }
 
 #comment_text {
@@ -252,9 +254,9 @@
     width: 70%;
     height: 10em;
     resize: none;
-    margin-left: 1em;
     margin-bottom:5px;
     float: right;
+    border: 1px solid black;
 }
 
 #comment_submit {
@@ -264,7 +266,5 @@
     margin-bottom:5px;
     float: right;
 }
-
-
 
 
