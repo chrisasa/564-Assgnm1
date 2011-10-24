@@ -53,7 +53,18 @@
         	
             <div id="maincolumn">
             	<h2>Σύνθετη Αναζήτηση</h2>
-                <form id="detailedsearchform" name="detailedsearch" action="search_false.html" method="post">
+                <a name="errors"></a>
+                <div class="errorsearchform">
+                	<img src="pics/symbol-error.png" alt="Θαυμαστικό μέσα σε κόκκινο κύκλο, ένδειξη οτι εντοπίστηκαν λάθη."/>
+                    <div class="errors">
+                        <h4>Τα παρακάτω λάθη πρέπει να διορθωθούν:</h4>
+                        <ol>
+                            <li><a href="#terms">Παρακαλώ συμπληρώστε το πεδίο των λέξεων αναζήτησης, είναι υποχρεωτικό πεδίο.</a></li>
+                            <li><a href="#isbn">Παρακαλώ συμπληρώστε έγκυρο αριθμό isbn, δεν υποστηρίζονται χαρακτήρες.</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <form id="detailedsearchform" name="detailedsearch" action="results.html" method="post">
               		<fieldset>
                     <legend>Εισάγετε τα πεδία της σύνθετης αναζήτησης</legend>
                     <p>Η συμπλήρωση των πεδίων με την ένδειξη αστερίσκος <span class="red">*</span> είναι υποχρεωτική.</p>
@@ -65,14 +76,18 @@
                                 <option value="4">Μυθιστορήματα</option>
                                 <option value="5">...</option>
                               </select>
+                            <a name="terms"></a>
                         	<label for="fterms"><span class="hidden">αστερίσκος</span><span class="red">*</span>Λέξεις αναζήτησης:</label> <!--h44 rule-->
                         	<input type="text" id="fterms" name="terms"/>
+                            <span class="hidden"><a href="#errors">Πίσω στη λίστα με τα λάθη</a></span>
                         	<label for="fauthor">Συγγραφέας:</label> <!--h44 rule-->
                         	<input type="text" id="fauthor" name="author"/>
                         	<label for="fpublisher">Εκδότης:</label> <!--h44 rule-->
                         	<input type="text" id="fpublisher" name="publisher"/>
-                        	<label for="fisbn">ISBN:</label> <!--h44 rule-->
+                        	 <a name="isbn"></a>
+                            <label for="fisbn">ISBN:</label> <!--h44 rule-->
                         	<input type="text" id="fisbn" name="isbn"/>
+                            <span class="hidden"><a href="#errors">Πίσω στη λίστα με τα λάθη</a></span>
                             
                         	<input type="submit" id="detailedsearchButton" title="Εκκίνηση σύνθετης αναζήτησης" value="Αναζήτηση&raquo;" />
                       		<input type="reset" value="Καθαρισμός" title="Καθαρισμός Φόρμας" id="detailedsearchreset"></input>
