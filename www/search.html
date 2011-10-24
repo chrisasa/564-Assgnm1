@@ -53,7 +53,7 @@
         	
             <div id="maincolumn">
             	<h2>Σύνθετη Αναζήτηση</h2>
-                <form name="detailedsearch" action="http://results.html" method="post">
+                <form id="detailedsearchform" name="detailedsearch" action="http://results.html" method="post">
               		<fieldset>
                     <legend>Εισάγετε τα πεδία της σύνθετης αναζήτησης</legend>
                     	<div class="ffield">
@@ -67,13 +67,24 @@
                               </select>
                         </div>
                         <div class="ffield">
-                        	<span class="hidden">αστερίσκος</span>
-							<span class="red">* </span>
-                        	<label for="terms">Λέξεις αναζήτησης:</label> <!--h44 rule-->
-                        	<input type="text" id="terms"/>
+                        	
+                        	<label for="fterms"><span class="hidden">αστερίσκος</span><span class="red">* </span>Λέξεις αναζήτησης:</label> <!--h44 rule-->
+                        	<input type="text" id="fterms" name="terms"/>
                         </div>
                         <div class="ffield">
-                        <input type="submit" id="detailedsearchButton" title="Εκκίνηση σύνθετης αναζήτησης" value="Αναζήτηση&raquo;" />
+                        	<label for="fauthor">Συγγραφέας:</label> <!--h44 rule-->
+                        	<input type="text" id="fauthor" name="author"/>
+                        </div>
+                        <div class="ffield">
+                        	<label for="fpublisher">Εκδότης:</label> <!--h44 rule-->
+                        	<input type="text" id="fpublisher" name="publisher"/>
+                        </div>
+                        <div class="ffield">
+                        	<label for="fisbn">ISBN:</label> <!--h44 rule-->
+                        	<input type="text" id="fisbn" name="isbn"/>
+                        </div>
+                        <div class="ffield">
+                        	<input type="submit" id="detailedsearchButton" title="Εκκίνηση σύνθετης αναζήτησης" value="Αναζήτηση&raquo;" />
                       	</div>
                     </fieldset>
                 </form>

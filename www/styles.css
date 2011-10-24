@@ -456,3 +456,26 @@ width: 1px;
 .red{
 	color:red;
 }
+
+#detailedsearchform{
+	margin:8% 0;
+}
+#detailedsearchform fieldset{
+	padding:5%;
+}
+.ffield{
+	display: block;
+}
+.ffield input,select{
+	border: 1px solid #333333;
+	float:right;
+	margin-right:5em;
+	margin-top: 1em;
+}
+
+.ffield label {
+    clear: both;
+    float: left;
+	margin-top: 1em;
+	
+}
