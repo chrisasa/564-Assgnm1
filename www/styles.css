@@ -10,6 +10,34 @@ body {
 	text-decoration:none;
 }
 
+img{
+	border:1px solid white;
+}
+
+.red{
+	color:red;
+}
+
+select:focus,input[type=checkbox]:focus + label, input[type=radio]:focus + label,input:focus, textarea:focus{
+    border: 1px solid red !important;
+	background-color: rgb(255, 255, 128) !important;
+	color: rgb(0, 0, 0) !important;
+}
+
+a:hover img, a:focus img { 
+	border: 1px solid blue !important;
+}
+
+.hidden, #hidden { 
+height: 1px;
+left: -10000px;
+overflow-x: hidden;
+overflow-y: hidden;
+position: absolute;
+top: auto;
+width: 1px;
+}
+
 #wrapper{
 	max-width: 1024px;
 	min-width: 930px;
@@ -30,8 +58,14 @@ body {
 
 #logo{
     display: inline-block;
+	
 }
-
+#logo img{
+	border:none;
+}
+#logo img:focus{
+	
+}
 #search{
     float: right;
     margin-top: 5em;
@@ -54,26 +88,6 @@ body {
     height: 2.2em;
 }
 
-
-select:focus,input[type=checkbox]:focus + label, input[type=radio]:focus + label,input:focus, textarea:focus{
-    border: 1px solid red !important;
-	background-color: rgb(255, 255, 128) !important;
-	color: rgb(0, 0, 0) !important;
-}
-
-a:hover img, a:focus img { 
-	border: 1px solid blue; 
-}
-
-.hidden, #hidden { 
-height: 1px;
-left: -10000px;
-overflow-x: hidden;
-overflow-y: hidden;
-position: absolute;
-top: auto;
-width: 1px;
-}
 
 #search a{
     float:right;
@@ -453,10 +467,6 @@ width: 1px;
 	text-decoration:underline;
 }
 
-.red{
-	color:red;
-}
-
 #detailedsearchform{
 	margin:8% 0;
 }
@@ -466,7 +476,14 @@ width: 1px;
 .ffield{
 	display: block;
 }
-.ffield input,select{
+.ffield input{
+	border: 1px solid #333333;
+	float:right;
+	margin-right:5em;
+	margin-top: 1em;
+}
+
+.ffield select{
 	border: 1px solid #333333;
 	float:right;
 	margin-right:5em;
@@ -479,3 +496,6 @@ width: 1px;
 	margin-top: 1em;
 	
 }
+
+
+
