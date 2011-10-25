@@ -231,7 +231,7 @@
     float: left;
 }
 
-#comments_name {
+#comment_name {
     display: block;
     width:  70%; 
     margin-bottom:0.6em;
@@ -286,6 +286,34 @@
     float: right;
 }
 
+/* Error in new comment
+*/
+
+#errorCommentform{
+	width:auto;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 0.5em;
+	border:1px dotted #333333;
+	background-color:#e2f4fe;
+}
+
+#errorCommentform img{
+	width:3em;
+	display:block;
+	float:left;
+	margin-top:1em;
+	margin-left:1em;
+}
+
+#commentErrors{
+	display:block;
+	margin-left:5em;
+}
+
+#commentErrors ol>li{
+	margin-bottom:0.3em;
+}
 
 
 
