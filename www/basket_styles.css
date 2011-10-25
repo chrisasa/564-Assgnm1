@@ -16,17 +16,26 @@
     margin-right: auto;
 }
 
+#basketTable a{
+	color:#333333;
+	text-decoration:none;
+}
+
+#basketTable a:hover,#basketTable a:focus{
+	text-decoration:underline;
+}
+
 #basketHeaderRow th{
     text-align: center;
     background-color: #9BC4E2;
-    border: 1px solid black;
+    border: 1px solid #5C86A5;
 }
 
 .basketProductsRow td{
     text-align: center;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    border-left: 1px solid #5C86A5;
+    border-right: 1px solid #5C86A5;
+    border-bottom: 1px solid #5C86A5;
 }
 
 .basketProductsRow img{
@@ -37,5 +46,23 @@
 }
 
 .product_quantity {
-    width: 3em;
+    width: 2em;
+	text-align:center;
+}
+
+.basketSumRow{
+	background-color:#ebf2f8;
+	text-align: right;
+	border-left: 1px solid #5C86A5;
+    border-right: 1px solid #5C86A5;
+   
+}
+
+#basketlast{
+	border-bottom:	1px solid #5C86A5;
+}
+
+.basketFinalPrices{
+	text-align:left !important;
+	padding-left:3.2em !important;
 }

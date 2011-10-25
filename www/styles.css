@@ -33,6 +33,10 @@ a:hover img, a:focus img {
 	border: 1px solid blue !important;
 }
 
+a:focus{
+	text-decoration:underline !important;
+}
+
 .hidden, #hidden { 
 height: 1px;
 left: -10000px;
@@ -64,6 +68,10 @@ width: 1px;
 #logo{
     display: inline-block;
 	
+}
+
+#logo a:hover img{
+	border:1px solid transparent !important;
 }
 
 #search{
@@ -131,7 +139,7 @@ width: 1px;
 }
 
 #ul_main_menu li a:hover{
-    border-bottom: 1px dotted white;
+    text-decoration:underline;
 }
 
 
@@ -176,7 +184,7 @@ width: 1px;
 }
 
 #submenu a:hover{
-    border-bottom: 1px solid #000;
+   text-decoration:underline;
 }
 
 #basket span{
