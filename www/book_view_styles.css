@@ -309,7 +309,7 @@
 
 #bookCategories li{
     height: 2em;
-    padding-top: 0.4em;
+    padding-top: 0.5em;
     border-bottom: 1px dotted #ad0101;
 }
 
@@ -322,6 +322,7 @@
 
 #bookCategories a li:hover{
     background-color:#ece1e1;
+    text-decoration: underline;
 }
 
 #activeCatMenu {
