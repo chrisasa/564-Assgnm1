@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv ="Content-Language" Content="el" />
 <meta name="keywords" content="βιβλία,best seller, βιβλιοπωλείο, γκρεις, λογοτεχνία, ποίηση" />
-<title>Αποτελέσματα αναζήτησης για "Steve Jobs" | Βιβλιοπωλείο Γκρέισ</title>
+<title>Λογοτεχνία > Ιστορία | Βιβλιοπωλείο Γκρέισ</title>
 
 <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
@@ -25,7 +25,7 @@
                     <input type="submit" id="searchButton" title="Εκκίνηση αναζήτησης" value="Αναζήτηση&raquo;" />
                     
                 </form>
-                <a href="#">Σύνθετη Αναζήτηση &raquo;</a>
+                <a href="./search.html">Σύνθετη Αναζήτηση &raquo;</a>
             </div>
         </div>
         
@@ -33,27 +33,27 @@
         <!-- Main menu -->
         <div id="mainmenu">
         	<ul id="ul_main_menu">
-        		<li><a href="#">Αρχική</a></li>
-        		<li><a href="#">Λογοτεχνία</a></li>
-        		<li><a href="#">Επιστημονικά</a></li>
-        		<li><a href="#">Επικοινωνία</a></li>        		
+                    <li><a href="./index.html">Αρχική</a></li>
+                    <li id="activeMainMenu">Λογοτεχνία</li>
+                    <li><a href="./literature.html">Επιστημονικά</a></li>
+                    <li><a href="#">Επικοινωνία</a></li>        		
         	</ul>
         </div>
         
         
         <!-- Sub menu -->
         <div id="submenu">
-			<span id="path">Βρίσκεστε: <a href="#">Αρχική Σελίδα</a> > Αποτελέσματα αναζήτησης</span>
-            <a id="basket" href="#"><span>Το καλάθι μου</span> ( 0 προϊόντα <span>0,00 €</span> )</a>
+			<span id="path">Βρίσκεστε: <a href="./literature.html">Λογοτεχνία</a> &gt; Ιστορία </span>
+                        <a id="basket" href="#"><span>Το καλάθι μου</span> ( 0 προϊόντα <span>0,00 €</span> )</a>
         </div>
         
-    
+        
         <!-- Main page-->
         <div id="main">
         	
             <div id="maincolumn">
             	<div class="resultstop">
-                	<div id="found">Βρέθηκαν: <span id="bold">23</span> αποτελέσματα για τον όρο "Steve Jobs".</div>
+                    <div id="found">Βιβλία της <span class="bold">Ιστορίας</span></div>
                     <form id="sortform" action="http://results.html" method="post">
                      <label for="sort">Ταξινόμηση:</label>
                       <select name="sort" id="sort">
@@ -149,10 +149,24 @@
                     <a href="results.html"> 4 </a>
                     <a href="results.html"> Επόμενη&raquo; </a>
                 </div>
-        	</div>
+            </div>
             
             <div id="leftcolumn">
                 
+                <!-- -->
+                
+                <div id="bookCategories">
+                    <h2>Κατηγορίες</h2>
+                    <ul>
+                        <a href="#"><li id="firstCatMenu">Τέχνες</li></a>
+                        <a href="#"><li>Μυθυστορήματα</li></a>
+                        <a href="#"><li>Βιογραφίες</li></a>
+                        <a href="#"><li>Φαντασίας</li></a>
+                        <li id="activeCatMenu">Ιστορία</li>
+                    </ul>
+                </div>
+                
+                <!-- -->
                 <div id="bestSeller">
                     
                     <h2>Best Sellers</h2>
