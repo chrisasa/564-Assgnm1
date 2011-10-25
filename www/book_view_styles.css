@@ -234,7 +234,7 @@
 #comments_name {
     display: block;
     width:  70%; 
-    margin-bottom:5px;
+    margin-bottom:0.6em;
     float: right;
     border: 1px solid #333333;
 }
@@ -242,7 +242,7 @@
 #comment_email {
     display: block;
     width: 70%;
-    margin-bottom:5px;
+    margin-bottom:0.6em;
     float: right;
     border: 1px solid #333333;
 }
@@ -252,19 +252,25 @@
     width: 70%;
     height: 10em;
     resize: none;
-    margin-bottom:5px;
+    margin-bottom:1.6em;
     float: right;
     border: 1px solid #333333;
 }
 
-
-
+#comment_ratting {
+    display: block;
+    width: 10%;
+    margin-bottom:0.6em;
+    margin-left: 2em;
+    float: left;
+    border: 1px solid #333333;
+}
 
 #comment_reset {
     display: inline-block ;
     width:auto; 
     margin-top: 1em;
-    margin-bottom:5px;
+    margin-bottom:0.6em;
     margin-right: 3em;
     float: right;
 }
@@ -276,7 +282,7 @@
     display: inline-block ;
     width:auto; 
     margin-top: 1em;
-    margin-bottom:5px;
+    margin-bottom:0.6em;
     float: right;
 }
 
@@ -304,7 +310,6 @@
     padding-left: 0.2em;
     padding-right: 0.2em;
     margin-right: 0.5em;
-    background-color: #f2f2f2;
 }
 
 #bookCategories li{
@@ -331,12 +336,13 @@
     font-size: 1.2em;
     font-weight: bold;
     padding-top: 0.5em !important;
-    background-color: #fff !important;
+    background-color: #ece1e1 !important;
     color: #ad0101 !important;
 }
 
 #firstCatMenu {
     border-top: 1px dotted #ad0101;
+    
 }
 
 
