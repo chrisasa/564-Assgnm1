@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*  Kalathi agoron
+*/
+
+#basketTable td, #basketTable th {
+    padding: 0.5em;
+}
+
+#basketTable {
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#basketHeaderRow th{
+    text-align: center;
+    background-color: #9BC4E2;
+    border: 1px solid black;
+}
+
+.basketProductsRow td{
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.basketProductsRow img{
+    display: block;
+    width: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
