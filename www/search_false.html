@@ -11,31 +11,44 @@
 </head>
 
 <body>
+	<a name="top"></a>
+	<span class="hidden"><a href="#content">Μετάβαση στo περιεχόμενο</a></span>
+	<span class="hidden"><a href="#search">Μετάβαση στην αναζήτηση</a></span>
+    <span class="hidden"><a href="#navigation">Μετάβαση στo μενού</a></span>
+    
     <div id="wrapper">
     	
         <!-- Header -->
         <div id="header">
+        	
             <div id="logo">
-            	<a href="index.html"> <img src="pics/logo.png" alt="Λογότυπο Βιβλιοπολείου Ειρμός" title="Λογότυπο Βιβλιοπολείου Ειρμός"/></a>
+            	<a href="index.html"> <img src="pics/logo.png" alt="Λογότυπο Βιβλιοπολείου Γκρεις" title="Βιβλιοπωλείο Γκρεις"/></a>
             </div>
+            <div id="sitemap">
+            	<img src="pics/sitemap.png" alt=""/>
+                <a href="sitemap.html">Χάρτης ιστότοπου</a>
+            </div>
+            <a name="search"></a>
             <div id="search">
-                <form name="input" action="#" method="get">
+                <form name="input" action="results.html" method="get">
                     <label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
                     <input type="text" id="searchField" />
                     <input type="submit" id="searchButton" title="Εκκίνηση αναζήτησης" value="Αναζήτηση&raquo;" />
                     
                 </form>
-                <a href="#">Σύνθετη Αναζήτηση &raquo;</a>
+                <a href="search.html">Σύνθετη Αναζήτηση &raquo;</a>
             </div>
         </div>
         
-        
+        <a name="navigation"></a>
         <!-- Main menu -->
         <div id="mainmenu">
         	<ul id="ul_main_menu">
-        		<li><a href="#">Αρχική</a></li>
-        		<li><a href="#">Λογοτεχνία</a></li>
-        		<li><a href="#">Επιστημονικά</a></li>
+        		<li><a href="index.html">Αρχική</a></li>
+        		<li><a href="./literature.html">Λογοτεχνία</a></li>
+        		<li><a href="./literature.html">Επιστημονικά</a></li>
+                <li><a href="./literature.html">Παιδικά</a></li>
+        		<li><a href="./literature.html">Σχολικά</a></li>
         		<li><a href="#">Επικοινωνία</a></li>        		
         	</ul>
         </div>
@@ -43,11 +56,11 @@
         
         <!-- Sub menu -->
         <div id="submenu">
-			<span id="path">Βρίσκεστε: <a href="#">Αρχική Σελίδα</a> > Σύνθετη Αναζήτηση</span>
-            <a id="basket" href="#"><span>Το καλάθι μου</span> ( 0 προϊόντα <span>0,00 €</span> )</a>
+			<span id="path">Βρίσκεστε: <a href="index.html">Αρχική Σελίδα</a> > Σύνθετη Αναζήτηση</span>
+            <span id="basket"><img src="pics/shopping_cart.jpg" alt="" /><a href="basket.html"><span>Το καλάθι μου</span> ( 0 προϊόντα <span>0,00 €</span> )</a>
         </div>
         
-    
+    	<a name="content"></a>
         <!-- Main page-->
         <div id="main">
         	
@@ -60,7 +73,7 @@
                         <h4>Τα παρακάτω λάθη πρέπει να διορθωθούν:</h4>
                         <ol>
                             <li><a href="#terms">Παρακαλώ συμπληρώστε το πεδίο των λέξεων αναζήτησης, είναι υποχρεωτικό πεδίο.</a></li>
-                            <li><a href="#isbn">Παρακαλώ συμπληρώστε έγκυρο αριθμό isbn, δεν υποστηρίζονται χαρακτήρες.</a></li>
+                            <li><a href="#isbn">Παρακαλώ συμπληρώστε έγκυρο αριθμό <span lang="en">isbn</span>, δεν υποστηρίζονται χαρακτήρες.</a></li>
                         </ol>
                     </div>
                 </div>
@@ -76,16 +89,28 @@
                                 <option value="4">Μυθιστορήματα</option>
                                 <option value="5">...</option>
                               </select>
+                            <label for="book_year">Έτος έκδοσης:</label>
+                              <select name="book_year" id="book_year">
+                              	<option value="">Επιλέξτε έτος</option>
+                                <option value="1">1996</option>
+                                <option value="2">1997</option>
+                                <option value="3">1998</option> 
+                                <option value="4">1999</option>
+                                <option value="5">2000</option>
+                                <option value="6">...</option>
+                              </select>
                             <a name="terms"></a>
                         	<label for="fterms"><span class="hidden">αστερίσκος</span><span class="red">*</span>Λέξεις αναζήτησης:</label> <!--h44 rule-->
                         	<input type="text" id="fterms" name="terms"/>
                             <span class="hidden"><a href="#errors">Πίσω στη λίστα με τα λάθη</a></span>
+                            <label for="ftitle">Τίτλος βιβλίου:</label> <!--h44 rule-->
+                        	<input type="text" id="ftitle" name="title"/>
                         	<label for="fauthor">Συγγραφέας:</label> <!--h44 rule-->
                         	<input type="text" id="fauthor" name="author"/>
                         	<label for="fpublisher">Εκδότης:</label> <!--h44 rule-->
                         	<input type="text" id="fpublisher" name="publisher"/>
                         	 <a name="isbn"></a>
-                            <label for="fisbn">ISBN:</label> <!--h44 rule-->
+                            <label for="fisbn"><span lang="en">ISBN:</span></label> <!--h44 rule-->
                         	<input type="text" id="fisbn" name="isbn"/>
                             <span class="hidden"><a href="#errors">Πίσω στη λίστα με τα λάθη</a></span>
                             
@@ -100,7 +125,7 @@
                 
                 <div id="bestSeller">
                     
-                    <h2>Best Sellers</h2>
+                    <h2><span lang="en">Best Sellers</span></h2>
                     
                     <div class="bestbooksline">
                         <div class="bestSellerBookpreview">
@@ -113,10 +138,10 @@
                     
                     <div class="bestbooksline">
                         <div class="bestSellerBookpreview">
-                            <a href="./book_view_2.html"><img alt="Εξώφιλο βιβλίου Steve Jobs - Ισάακ Ομέρτ" title="Steve Jobs - Ισάακ Ομέρτ" src="imgbooks/book_3.jpg"/></a>
+                            <a href="./book_view_2.html"><img alt="Εξώφιλο βιβλίου Στιβ Τζομπς - Ισάακ Ομέρτ" title="Steve Jobs - Ισάακ Ομέρτ" src="imgbooks/book_3.jpg"/></a>
                         </div>
                         <div class="bestSellerBookpreview">
-                            <a href="./book_view_2.html"><img alt="Εξώφιλο βιβλίου Steve Jobs - Ισάακ Ομέρτ" title="Steve Jobs - Ισάακ Ομέρτ" src="imgbooks/book_3.jpg"/></a>
+                            <a href="./book_view_2.html"><img alt="Εξώφιλο βιβλίου Στιβ Τζομπς - Ισάακ Ομέρτ" title="Steve Jobs - Ισάακ Ομέρτ" src="imgbooks/book_3.jpg"/></a>
                         </div>
                     </div>
                     
@@ -136,7 +161,7 @@
             
         </div>
         
-        
+        <span class="hidden"><a href="#top">Μετάβαση στη κορυφή της σελίδας</a></span>
         <!-- Footer -->
         <div id="footer">
             <div id="validators">
@@ -148,7 +173,7 @@
                 </div>
             </div>
         </div>
-        
+        <span class="hidden"><a href="#top">Μετάβαση στη κορυφή της σελίδας</a></span>
     </div>
 </body>
 </html>

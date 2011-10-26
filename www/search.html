@@ -16,10 +16,14 @@
         <!-- Header -->
         <div id="header">
             <div id="logo">
-            	<a href="index.html"> <img src="pics/logo.png" alt="Λογότυπο Βιβλιοπολείου Ειρμός" title="Λογότυπο Βιβλιοπολείου Ειρμός"/></a>
+            	<a href="index.html"> <img src="pics/logo.png" alt="Λογότυπο Βιβλιοπωλείου Γκρέις" title="Βιβλιoπωλείο Γκρέις"/></a>
+            </div>
+            <div id="sitemap">
+            	<img src="pics/sitemap.png" alt=""/>
+                <a href="sitemap.html">Χάρτης ιστότοπου</a>
             </div>
             <div id="search">
-                <form name="input" action="#" method="get">
+                <form name="input" action="results.html" method="get">
                     <label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
                     <input type="text" id="searchField" />
                     <input type="submit" id="searchButton" title="Εκκίνηση αναζήτησης" value="Αναζήτηση&raquo;" />
@@ -36,6 +40,8 @@
         		<li><a href="./index.html">Αρχική</a></li>
         		<li><a href="./literature.html">Λογοτεχνία</a></li>
         		<li><a href="./literature.html">Επιστημονικά</a></li>
+                <li><a href="./literature.html">Παιδικά</a></li>
+        		<li><a href="./literature.html">Σχολικά</a></li>
         		<li><a href="#">Επικοινωνία</a></li>        		
         	</ul>
         </div>
@@ -44,7 +50,7 @@
         <!-- Sub menu -->
         <div id="submenu">
 			<span id="path">Βρίσκεστε: Σύνθετη Αναζήτηση</span>
-            <a id="basket" href="./basket.html"><span>Το καλάθι μου</span> ( 0 προϊόντα <span>0,00 €</span> )</a>
+            <span id="basket"><img src="pics/shopping_cart.jpg" alt="" /><a href="basket.html"><span>Το καλάθι μου</span> ( 0 προϊόντα <span>0,00 €</span> )</a>
         </div>
         
     
@@ -53,7 +59,7 @@
         	
             <div id="maincolumn">
             	<h2>Σύνθετη Αναζήτηση</h2>
-                <form id="detailedsearchform" name="detailedsearch" action="search_false.html" method="post">
+                <form id="detailedsearchform" name="detailedsearch" action="search_false.html#errors" method="post">
               		<fieldset>
                     <legend>Εισάγετε τα πεδία της σύνθετης αναζήτησης</legend>
                     <p>Η συμπλήρωση των πεδίων με την ένδειξη αστερίσκος <span class="red">*</span> είναι υποχρεωτική.</p>
@@ -65,13 +71,25 @@
                                 <option value="4">Μυθιστορήματα</option>
                                 <option value="5">...</option>
                               </select>
+                            <label for="book_year">Έτος έκδοσης:</label>
+                              <select name="book_year" id="book_year">
+                              	<option value="">Επιλέξτε έτος</option>
+                                <option value="1">1996</option>
+                                <option value="2">1997</option>
+                                <option value="3">1998</option> 
+                                <option value="4">1999</option>
+                                <option value="5">2000</option>
+                                <option value="6">...</option>
+                              </select>
                         	<label for="fterms"><span class="hidden">αστερίσκος</span><span class="red">*</span>Λέξεις αναζήτησης:</label> <!--h44 rule-->
                         	<input type="text" id="fterms" name="terms"/>
+                            <label for="ftitle">Τίτλος βιβλίου:</label> <!--h44 rule-->
+                        	<input type="text" id="ftitle" name="title"/>
                         	<label for="fauthor">Συγγραφέας:</label> <!--h44 rule-->
                         	<input type="text" id="fauthor" name="author"/>
                         	<label for="fpublisher">Εκδότης:</label> <!--h44 rule-->
                         	<input type="text" id="fpublisher" name="publisher"/>
-                        	<label for="fisbn">ISBN:</label> <!--h44 rule-->
+                        	<label for="fisbn"><span lang="en">ISBN</span>:</label> <!--h44 rule-->
                         	<input type="text" id="fisbn" name="isbn"/>
                             
                         	<input type="submit" id="detailedsearchButton" title="Εκκίνηση σύνθετης αναζήτησης" value="Αναζήτηση&raquo;" />
@@ -98,10 +116,10 @@
                     
                     <div class="bestbooksline">
                         <div class="bestSellerBookpreview">
-                            <a href="./book_view_1.html"><img alt="Εξώφιλο βιβλίου ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" title="ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" src="imgbooks/book_3.jpg"/></a>
+                            <a href="./book_view_2.html"><img alt="Εξώφιλο βιβλίου Στιβ Τζομπς - Ισάακ Ομέρτ" title="Steve Jobs - Ισάακ Ομέρτ" src="imgbooks/book_3.jpg"/></a>
                         </div>
                         <div class="bestSellerBookpreview">
-                            <a href="./book_view_1.html"><img alt="Εξώφιλο βιβλίου ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" title="ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" src="imgbooks/book_3.jpg"/></a>
+                            <a href="./book_view_2.html"><img alt="Εξώφιλο βιβλίου Στιβ Τζομπς - Ισάακ Ομέρτ" title="Steve Jobs - Ισάακ Ομέρτ" src="imgbooks/book_3.jpg"/></a>
                         </div>
                     </div>
                     
