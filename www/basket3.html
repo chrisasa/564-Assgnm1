@@ -8,7 +8,6 @@
 <title>Καλάθι αγορών-Βήμα 3(Εισαγωγή στοιχείων) | Βιβλιοπωλείο Γκρέις</title>
 
 <link rel="stylesheet" type="text/css" href="styles.css" />
-<link rel="stylesheet" type="text/css" href="basket_styles.css" />
 </head>
 
 <body>
@@ -53,13 +52,86 @@
         <div id="main">
         	
             <div id="maincolumn">
-            <h2>Το καλάθι μου</h2>
-            <div class="cart"> 
+                <h2>Το καλάθι μου</h2>
                 <h3>Βήμα 3 από 4 :: Εισαγωγή στοιχείων</h3>
+                
+                <div id="basket3"> 
+                    <form action="book_view_1.html" method="post">
+                        
+                        <fieldset id="pros_stx">
+                            <legend>Στοιχεία Τιμολόγησης</legend>
+                            
+                            <label for="comments_name">
+                                <span class="hidden">αστερίσκος</span>
+                                <span class="red">* </span>
+                                Το όνομα σας
+                            </label>
+                            <input type="text" name="basket3_name" id="basket3_name" style=""></input>
+                            
+                            <label for="comments_name">
+                                <span class="hidden">αστερίσκος</span>
+                                <span class="red">* </span>
+                                Το επίθετο σας
+                            </label>
+                            <input type="text" name="basket3_subname" id="basket3_subname" style=""></input>
+                            
+                            <label for="comments_name">
+                                <span class="hidden">αστερίσκος</span>
+                                <span class="red">* </span>
+                                Το e-mail σας
+                            </label>
+                            <input type="text" name="basket3_email" id="basket3_email" style=""></input>
+                            
+                            <label for="comments_name">
+                                <span class="hidden">αστερίσκος</span>
+                                <span class="red">* </span>
+                                Πόλη
+                            </label>
+                            <input type="text" name="basket3_city" id="basket3_city" style=""></input>
+                            
+                            <label for="comments_name">
+                                <span class="hidden">αστερίσκος</span>
+                                <span class="red">* </span>
+                                Διεύθυνση
+                            </label>
+                            <input type="text" name="basket3_address" id="basket3_address" style=""></input>
+                            
+                            <label for="comments_name">
+                                <span class="hidden">αστερίσκος</span>
+                                <span class="red">* </span>
+                                Τ.Κ.
+                            </label>
+                            <input type="text" name="basket3_tk" id="basket3_tk" style=""></input>
+                            
+                            <label for="comments_name">
+                                <span class="hidden">αστερίσκος</span>
+                                <span class="red">* </span>
+                                Τηλέφωνο
+                            </label>
+                            <input type="text" name="basket3_phone" id="basket3_phone" style=""></input>
+                            
+                        </fieldset>
+                        
+                        
+                        <fieldset id="2">
+                            <legend>Τρόπος Αποστολής</legend>
+                            
+                            <input type="radio" id="parapano_adr" name="paradosi" checked="checked" value="a"/>
+                            <label for="parapano_adr">Στην παραπάνω διεύθυνση</label><br />
+                            
+                            <input type="radio" id="alli_adr" name="paradosi" checked="checked" value="b"/>
+                            <label for="alli_adr">Σε άλλη διεύθυνση</label><br />
+                            
+                            <input type="radio" id="apo_katastima" name="paradosi" checked="checked" value="c"/>
+                            <label for="apo_katastima">Παραλαβή από το κατάστημα</label><br />
+                            
+                        </fieldset>
                         
                         <input type="submit" id="basket1next" value="Επόμενο βήμα&raquo;" title="Συνέχεια στο βήμα 3-Εισαγωγής στοιχείων" />
-                        <a class="nounderline" href="basket.html"><input type="button" id="basket1back"value="&laquo;Πίσω στο καλάθι" title="Πίσω στο βήμα 1-Προεπισκόπιση καλαθιού" /></a>
-                        
+                        <a class="nounderline" href="basket.html"><input type="button" id="basket1back" value="&laquo;Πίσω στο καλάθι" title="Πίσω στο βήμα 1-Προεπισκόπιση καλαθιού" /></a>
+
+                    </form>
+                    
             	</div>
             </div>
             
