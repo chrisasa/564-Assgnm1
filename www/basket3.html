@@ -53,82 +53,144 @@
         	
             <div id="maincolumn">
                 <h2>Το καλάθι μου</h2>
-                <h3>Βήμα 3 από 4 :: Εισαγωγή στοιχείων</h3>
+                
                 
                 <div id="basket3"> 
-                    <form action="book_view_1.html" method="post">
+                <h3>Βήμα 3 από 4 :: Εισαγωγή στοιχείων</h3>
+                <p>Η συμπλήρωση των πεδίων με την ένδειξη αστερίσκος <span class="red">*</span> είναι υποχρεωτική.</p>
+                    <form action="basket4.html" method="post">
                         
-                        <fieldset id="pros_stx">
-                            <legend>Στοιχεία Τιμολόγησης</legend>
+                        <fieldset>
+                            <legend>Πρoσωπικά στοιχεία</legend>
+                            
+                         <div class="leftbasket3">
+                            <label for="comments_name">
+                                <span class="hidden">αστερίσκος</span>
+                                <span class="red">*</span>Το όνομα σας:
+                            </label>
+                            <input type="text" name="basket3_name" id="basket3_name" ></input>
                             
                             <label for="comments_name">
                                 <span class="hidden">αστερίσκος</span>
-                                <span class="red">* </span>
-                                Το όνομα σας
+                                <span class="red">*</span>Το επίθετο σας:
                             </label>
-                            <input type="text" name="basket3_name" id="basket3_name" style=""></input>
+                            <input type="text" name="basket3_subname" id="basket3_subname" ></input>
                             
                             <label for="comments_name">
                                 <span class="hidden">αστερίσκος</span>
-                                <span class="red">* </span>
-                                Το επίθετο σας
+                                <span class="red">*</span>Σταθερό τηλέφωνο:
                             </label>
-                            <input type="text" name="basket3_subname" id="basket3_subname" style=""></input>
+                            <input type="text" name="basket3_phone" id="basket3_phone" ></input>
+                            
+                            <label for="comments_name">
+                                &nbsp;Κινητό τηλέφωνο:
+                            </label>
+                            <input type="text" name="basket3_mphone" id="basket3_mphone" ></input>
+                         </div>   
+                         <div class="rightbasket3">   
+                            <label for="comments_name">
+                                <span class="hidden">αστερίσκος</span>
+                                <span class="red">*</span>Το e-mail σας:
+                            </label>
+                            <input type="text" name="basket3_email" id="basket3_email"></input>
                             
                             <label for="comments_name">
                                 <span class="hidden">αστερίσκος</span>
-                                <span class="red">* </span>
-                                Το e-mail σας
+                                <span class="red">*</span>Πόλη:
                             </label>
-                            <input type="text" name="basket3_email" id="basket3_email" style=""></input>
+                            <input type="text" name="basket3_city" id="basket3_city"></input>
                             
                             <label for="comments_name">
                                 <span class="hidden">αστερίσκος</span>
-                                <span class="red">* </span>
-                                Πόλη
+                                <span class="red">*</span>Διεύθυνση:
                             </label>
-                            <input type="text" name="basket3_city" id="basket3_city" style=""></input>
+                            <input type="text" name="basket3_address" id="basket3_address"></input>
                             
                             <label for="comments_name">
                                 <span class="hidden">αστερίσκος</span>
-                                <span class="red">* </span>
-                                Διεύθυνση
+                                <span class="red">*</span>Ταχ. Κώδικας:
                             </label>
-                            <input type="text" name="basket3_address" id="basket3_address" style=""></input>
+                            <input type="text" name="basket3_tk" id="basket3_tk"></input>
+                         </div>
                             
-                            <label for="comments_name">
-                                <span class="hidden">αστερίσκος</span>
-                                <span class="red">* </span>
-                                Τ.Κ.
-                            </label>
-                            <input type="text" name="basket3_tk" id="basket3_tk" style=""></input>
-                            
-                            <label for="comments_name">
-                                <span class="hidden">αστερίσκος</span>
-                                <span class="red">* </span>
-                                Τηλέφωνο
-                            </label>
-                            <input type="text" name="basket3_phone" id="basket3_phone" style=""></input>
                             
                         </fieldset>
                         
-                        
-                        <fieldset id="2">
+                        <fieldset>
                             <legend>Τρόπος Αποστολής</legend>
                             
-                            <input type="radio" id="parapano_adr" name="paradosi" checked="checked" value="a"/>
+                            <input type="radio" id="parapano_adr" name="paradosi1" checked="checked" value="a"/>
                             <label for="parapano_adr">Στην παραπάνω διεύθυνση</label><br />
                             
-                            <input type="radio" id="alli_adr" name="paradosi" checked="checked" value="b"/>
-                            <label for="alli_adr">Σε άλλη διεύθυνση</label><br />
-                            
-                            <input type="radio" id="apo_katastima" name="paradosi" checked="checked" value="c"/>
+                            <input type="radio" id="apo_katastima" name="paradosi2" value="c"/>
                             <label for="apo_katastima">Παραλαβή από το κατάστημα</label><br />
                             
                         </fieldset>
                         
-                        <input type="submit" id="basket1next" value="Επόμενο βήμα&raquo;" title="Συνέχεια στο βήμα 3-Εισαγωγής στοιχείων" />
-                        <a class="nounderline" href="basket.html"><input type="button" id="basket1back" value="&laquo;Πίσω στο καλάθι" title="Πίσω στο βήμα 1-Προεπισκόπιση καλαθιού" /></a>
+                        <fieldset>
+                            <legend>Τρόπος Πληρωμής</legend>
+                            <div id="paytop">
+                                <input type="radio" id="antikataboli" name="plhrwmh1" value="a"/>
+                                <label for="antikataboli">Αντικαταβολή</label><br />
+                                
+                                <input type="radio" id="apo_katastima" name="plhrwmh2" checked="checked" value="c"/>
+                                <label for="apo_katastima">Πιστωτική κάρτα</label><br />
+                            </div>
+                           
+                            <div class="leftbasket3">
+                                <label for="creditowner">
+                                    <span class="hidden">αστερίσκος</span>
+                                    <span class="red">*</span>Κάτοχος:
+                                </label>
+                                <input type="text" name="basket3_owner" id="creditowner"></input>
+                                
+                                <label for="creditnumber">
+                                    <span class="hidden">αστερίσκος</span>
+                                    <span class="red">*</span>Αριθμός:
+                                </label>
+                                <input type="text" name="basket3_number" id="creditnumber"></input>
+                                
+                                <label for="creditCCV">
+                                    <span class="hidden">αστερίσκος</span>
+                                    <span class="red">*</span>CCV:
+                                </label>
+                                <input type="text" name="basket3_CCV" id="creditCCV"></input>
+                            </div>
+								
+                            <div class="rightbasket3">
+                            	<label for="expire_year">
+                                 	<span class="hidden">αστερίσκος</span>
+                                    <span class="red">*</span>Έτος λήξης: 
+                            	</label>
+                                <select name="year_selection" id="expire_year">
+                                	<option value="" selected="selected">Επιλέξτε έτος</option>
+                                    <option value="1">2011</option>
+                                    <option value="2">2012</option>
+                                    <option value="3">2013</option> 
+                                    <option value="4">2014</option>
+                                    <option value="5">2015</option>
+                                    <option value="6">...</option>
+                                </select>
+                                <label for="expire_month">
+                               		<span class="hidden">αστερίσκος</span>
+                                    <span class="red">*</span>Μήνας λήξης: 
+                            	</label>
+                                <select name="month_selection" id="expire_month">
+                                	<option value="" selected="selected">Επιλέξτε μήνα</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option> 
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">...</option>
+                                </select>
+                                
+                                <img src="pics/visa_mastercard.jpg" alt="Εικονίδιο αποδεκτού τύπου πιστωτικών καρτών(βίζα και μαστερκαρντ)" title="Δεχόμαστε:Visa, Mastercard" />
+                            </div>
+                        </fieldset>
+                        
+                        <input type="submit" id="basket1next" value="Ολοκλήρωση παραγγελίας&raquo;" title="Συνέχεια στο βήμα 4-Ολοκλήρωση παραγγελίας" />
+                        <a class="nounderline" href="basket2.html"><input type="button" id="basket1back" value="&laquo;Πίσω στην επιβεβαίωση" title="Πίσω στο βήμα 2-Επιβεβαίωση προιόντων" /></a>
 
                     </form>
                     
