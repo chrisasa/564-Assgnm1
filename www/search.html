@@ -3,7 +3,7 @@
 <head>
 <meta name="description" content="Διαδικτυακός τόπος του βιβλιοπωλείου Γκρέισ."/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Language" Content="el" />
+<meta name="language" content="el">
 <meta name="keywords" content="βιβλία,best seller, βιβλιοπωλείο, γκρεις, λογοτεχνία, ποίηση" />
 <title>Σύνθετη Αναζήτηση | Βιβλιοπωλείο Γκρέις</title>
 
@@ -11,7 +11,13 @@
 </head>
 
 <body>
-    <div id="wrapper">
+        <a name="top"></a>
+        <ul class="hidden">
+    		<li><a href="#content">Μετάβαση στo περιεχόμενο</a></li>
+        	<li><a href="#search">Μετάβαση στην αναζήτηση</a></li>
+        	<li><a href="#navigation">Μετάβαση στo μενού</a></li>
+    	</ul>
+        <div id="wrapper">
     	
         <!-- Header -->
         <div id="header">
@@ -22,6 +28,7 @@
             	<img src="pics/sitemap.png" alt=""/>
                 <a href="sitemap.html">Χάρτης ιστότοπου</a>
             </div>
+            <a name="search"></a>
             <div id="search">
                 <form name="input" action="results.html" method="get">
                     <label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
@@ -33,7 +40,7 @@
             </div>
         </div>
         
-        
+        <a name="navigation"></a>
         <!-- Main menu -->
         <div id="mainmenu">
         	<ul id="ul_main_menu">
@@ -50,10 +57,10 @@
         <!-- Sub menu -->
         <div id="submenu">
 			<span id="path">Βρίσκεστε: Σύνθετη Αναζήτηση</span>
-            <span id="basket"><img src="pics/shopping_cart.jpg" alt="" /><a href="basket.html"><span>Το καλάθι μου</span> ( 0 προϊόντα <span>0,00 €</span> )</a>
+            <span id="basket"><img src="pics/shopping_cart.jpg" alt="" /><a href="basket.html"><span>Το καλάθι μου</span> ( 0 προϊόντα <span>0,00 €</span> )</a></span>
         </div>
         
-    
+    	<a name="content"></a>
         <!-- Main page-->
         <div id="main">
         	
@@ -139,7 +146,7 @@
             
         </div>
         
-        
+        <span class="hidden"><a href="#top">Μετάβαση στη κορυφή της σελίδας</a></span>
         <!-- Footer -->
         <div id="footer">
             <div id="validators">
@@ -151,7 +158,7 @@
                 </div>
             </div>
         </div>
-        
+        <span class="hidden"><a href="#top">Μετάβαση στη κορυφή της σελίδας</a></span>
     </div>
 </body>
 </html>

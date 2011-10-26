@@ -3,7 +3,7 @@
 <head>
 <meta name="description" content="Διαδικτυακός τόπος του βιβλιοπωλείου Γκρέισ."/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Language" Content="el" />
+<meta name="language" content="el">
 <meta name="keywords" content="βιβλία,best seller, βιβλιοπωλείο, γκρεις, λογοτεχνία, ποίηση" />
 <title>Αποτελέσματα αναζήτησης για "<span lang="en">Steve Jobs</span>" | Βιβλιοπωλείο Γκρέισ</title>
 
@@ -11,13 +11,24 @@
 </head>
 
 <body>
+	<a name="top"></a>
+    <ul class="hidden">
+    	<li><a href="#content">Μετάβαση στo περιεχόμενο</a></li>
+        <li><a href="#search">Μετάβαση στην αναζήτηση</a></li>
+        <li><a href="#navigation">Μετάβαση στo μενού</a></li>
+    </ul>
     <div id="wrapper">
     	
         <!-- Header -->
         <div id="header">
             <div id="logo">
-            	<a href="index.html"> <img src="pics/logo.png" alt="Λογότυπο Βιβλιοπολείου Ειρμός" title="Λογότυπο Βιβλιοπολείου Ειρμός"/></a>
+            	<a href="index.html"> <img src="pics/logo.png" alt="Λογότυπο Βιβλιοπολείου Γκρέις" title="Βιβλιοπωλείο Γκρέις"/></a>
             </div>
+            <div id="sitemap">
+            	<img src="pics/sitemap.png" alt=""/>
+                <a href="sitemap.html">Χάρτης ιστότοπου</a>
+            </div>
+            <a name="search"></a>
             <div id="search">
                 <form name="search" action="./results.html" method="post">
                     <label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
@@ -25,17 +36,19 @@
                     <input type="submit" id="searchButton" title="Εκκίνηση αναζήτησης" value="Αναζήτηση&raquo;" />
                     
                 </form>
-                <a href="#">Σύνθετη Αναζήτηση &raquo;</a>
+                <a href="./search.html">Σύνθετη Αναζήτηση &raquo;</a>
             </div>
         </div>
         
-        
+         <a name="navigation"></a>
         <!-- Main menu -->
         <div id="mainmenu">
         	<ul id="ul_main_menu">
-        		<li><a href="#">Αρχική</a></li>
-        		<li><a href="#">Λογοτεχνία</a></li>
-        		<li><a href="#">Επιστημονικά</a></li>
+        		<li><a href="./index.html">Αρχική</a></li>
+        		<li><a href="./literature.html">Λογοτεχνία</a></li>
+        		<li><a href="./literature.html">Επιστημονικά</a></li>
+                <li><a href="./literature.html">Παιδικά</a></li>
+        		<li><a href="./literature.html">Σχολικά</a></li>
         		<li><a href="#">Επικοινωνία</a></li>        		
         	</ul>
         </div>
@@ -43,11 +56,11 @@
         
         <!-- Sub menu -->
         <div id="submenu">
-			<span id="path">Βρίσκεστε: <a href="#">Αρχική Σελίδα</a> > Αποτελέσματα αναζήτησης</span>
-            <a id="basket" href="#"><span>Το καλάθι μου</span> ( 0 προϊόντα <span>0,00 €</span> )</a>
+			<span id="path">Βρίσκεστε: <a href="./index.html">Αρχική Σελίδα</a> > Αποτελέσματα αναζήτησης</span>
+            <span id="basket"><img src="pics/shopping_cart.jpg" alt="" /><a href="basket.html"><span>Το καλάθι μου</span> ( 0 προϊόντα <span>0,00 €</span> )</a></span>
         </div>
         
-    
+    	<a name="content"></a>
         <!-- Main page-->
         <div id="main">
         	
@@ -71,74 +84,74 @@
                 <div class="resultbox">
                 	<div class="resultinsideleft">
                         <a href="./book_view_2.html"><img alt="Εξώφιλο βιβλίου ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" title="ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" src="imgbooks/book_3.jpg"/></a>
-                        <span class="title"><a href="#"><span lang="en">Steve Jobs</span></a></span>
+                        <span class="title"><a href="book_view_2.html"><span lang="en">Steve Jobs</span></a></span>
                         <span class="author">Μπάξτερ Στεφεν</span>
                         <span class="publication">Εκδόσεις: Αίολος</span>
                         <span class="isbn">ISBN: 9789605212</span>
                         <span class="price">Τιμή: <span>29,27€</span></span>
                      </div>
                      <p>Στενή είναι η σχέση των μνημείων με την ιστορία των λαών που τα δημιούργησαν. Προσθέτουν αναμφίβολα μια σημαντική μαρτυρία σε ένα πλήθος άλλων ιστορικών δεδομένων και συμπληρώνουν τις γραπτές πηγές, που αποτελούν τον θεμέλιο λίθο της ιστορίας. Τα βυζαντινά μνημεία συγκροτούν ένα μεγάλο κεφάλαιο του ...</p>
-                    <span class="rbottom"><a href="#">Διαβάστε περισσότερα</a>|<a href="#">Προσθήκη στο καλάθι</a></span>
+                    <span class="rbottom"><a href="book_view_2.html">Διαβάστε περισσότερα</a>|<a href="basket.html">Προσθήκη στο καλάθι</a></span>
                 </div>
                 <div class="resultbox">
                 	<div class="resultinsideleft">
                         <a href="./book_view_2.html"><img alt="Εξώφιλο βιβλίου ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" title="ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" src="imgbooks/book_4.jpg"/></a>
-                        <span class="title"><a href="#">ΚΑΤΑΚΛΥΣΜΟΣ</a></span>
+                        <span class="title"><a href="book_view_1.html">ΚΑΤΑΚΛΥΣΜΟΣ</a></span>
                         <span class="author">Μπάξτερ Στεφεν</span>
                         <span class="publication">Εκδόσεις: Αίολος</span>
                         <span class="isbn">ISBN: 9789605212</span>
                         <span class="price">Τιμή: <span>29,27€</span></span>
                      </div>
                      <p>Στενή είναι η σχέση των μνημείων με την ιστορία των λαών που τα δημιούργησαν. Προσθέτουν αναμφίβολα μια σημαντική μαρτυρία σε ένα πλήθος άλλων ιστορικών δεδομένων και συμπληρώνουν τις γραπτές πηγές, που αποτελούν τον θεμέλιο λίθο της ιστορίας. Τα βυζαντινά μνημεία συγκροτούν ένα μεγάλο κεφάλαιο του ...</p>
-                    <span class="rbottom"><a href="#">Διαβάστε περισσότερα</a>|<a href="#">Προσθήκη στο καλάθι</a></span>
+                    <span class="rbottom"><a href="book_view_1.html">Διαβάστε περισσότερα</a>|<a href="basket.html">Προσθήκη στο καλάθι</a></span>
                 </div>
                 <div class="resultbox">
                 	<div class="resultinsideleft">
                         <a href="./book_view_2.html"><img alt="Εξώφιλο βιβλίου ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" title="ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" src="imgbooks/book_6.jpg"/></a>
-                        <span class="title"><a href="#">ΚΑΤΑΚΛΥΣΜΟΣ</a></span>
+                        <span class="title"><a href="book_view_1.html">ΚΑΤΑΚΛΥΣΜΟΣ</a></span>
                         <span class="author">Μπάξτερ Στεφεν</span>
                         <span class="publication">Εκδόσεις: Αίολος</span>
                         <span class="isbn">ISBN: 9789605212</span>
                         <span class="price">Τιμή: <span>29,27€</span></span>
                      </div>
                      <p>Στενή είναι η σχέση των μνημείων με την ιστορία των λαών που τα δημιούργησαν. Προσθέτουν αναμφίβολα μια σημαντική μαρτυρία σε ένα πλήθος άλλων ιστορικών δεδομένων και συμπληρώνουν τις γραπτές πηγές, που αποτελούν τον θεμέλιο λίθο της ιστορίας. Τα βυζαντινά μνημεία συγκροτούν ένα μεγάλο κεφάλαιο του ...</p>
-                    <span class="rbottom"><a href="#">Διαβάστε περισσότερα</a>|<a href="#">Προσθήκη στο καλάθι</a></span>
+                    <span class="rbottom"><a href="book_view_1.html">Διαβάστε περισσότερα</a>|<a href="basket.html">Προσθήκη στο καλάθι</a></span>
                 </div>
                 <div class="resultbox">
                 	<div class="resultinsideleft">
                         <a href="./book_view_2.html"><img alt="Εξώφιλο βιβλίου ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" title="ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" src="imgbooks/book_1.jpg"/></a>
-                        <span class="title"><a href="#">ΚΑΤΑΚΛΥΣΜΟΣ</a></span>
+                        <span class="title"><a href="book_view_1.html">ΚΑΤΑΚΛΥΣΜΟΣ</a></span>
                         <span class="author">Μπάξτερ Στεφεν</span>
                         <span class="publication">Εκδόσεις: Αίολος</span>
                         <span class="isbn">ISBN: 9789605212</span>
                         <span class="price">Τιμή: <span>29,27€</span></span>
                      </div>
                      <p>Στενή είναι η σχέση των μνημείων με την ιστορία των λαών που τα δημιούργησαν. Προσθέτουν αναμφίβολα μια σημαντική μαρτυρία σε ένα πλήθος άλλων ιστορικών δεδομένων και συμπληρώνουν τις γραπτές πηγές, που αποτελούν τον θεμέλιο λίθο της ιστορίας. Τα βυζαντινά μνημεία συγκροτούν ένα μεγάλο κεφάλαιο του ...</p>
-                    <span class="rbottom"><a href="#">Διαβάστε περισσότερα</a>|<a href="#">Προσθήκη στο καλάθι</a></span>
+                    <span class="rbottom"><a href="book_view_1.html">Διαβάστε περισσότερα</a>|<a href="basket.html">Προσθήκη στο καλάθι</a></span>
                 </div>
                 <div class="resultbox">
                 	<div class="resultinsideleft">
                         <a href="./book_view_2.html"><img alt="Εξώφιλο βιβλίου ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" title="ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" src="imgbooks/book_2.jpg"/></a>
-                        <span class="title"><a href="#">ΚΑΤΑΚΛΥΣΜΟΣ</a></span>
+                        <span class="title"><a href="book_view_1.html">ΚΑΤΑΚΛΥΣΜΟΣ</a></span>
                         <span class="author">Μπάξτερ Στεφεν</span>
                         <span class="publication">Εκδόσεις: Αίολος</span>
                         <span class="isbn">ISBN: 9789605212</span>
                         <span class="price">Τιμή: <span>29,27€</span></span>
                      </div>
                      <p>Στενή είναι η σχέση των μνημείων με την ιστορία των λαών που τα δημιούργησαν. Προσθέτουν αναμφίβολα μια σημαντική μαρτυρία σε ένα πλήθος άλλων ιστορικών δεδομένων και συμπληρώνουν τις γραπτές πηγές, που αποτελούν τον θεμέλιο λίθο της ιστορίας. Τα βυζαντινά μνημεία συγκροτούν ένα μεγάλο κεφάλαιο του ...</p>
-                    <span class="rbottom"><a href="#">Διαβάστε περισσότερα</a>|<a href="#">Προσθήκη στο καλάθι</a></span>
+                    <span class="rbottom"><a href="book_view_1.html">Διαβάστε περισσότερα</a>|<a href="basket.html">Προσθήκη στο καλάθι</a></span>
                 </div>
                 <div class="resultbox">
                 	<div class="resultinsideleft">
                         <a href="./book_view_2.html"><img alt="Εξώφιλο βιβλίου Στιβ Τζομπς - Ισάακ Ομέρτ" title="Steve Jobs - Ισάακ Ομέρτ" src="imgbooks/book_3.jpg"/></a>
-                        <span class="title"><a href="#">ΚΑΤΑΚΛΥΣΜΟΣ</a></span>
+                        <span class="title"><a href="book_view_2.html"><span lang="en">Steve Jobs</span></a></span>
                         <span class="author">Μπάξτερ Στεφεν</span>
                         <span class="publication">Εκδόσεις: Αίολος</span>
                         <span class="isbn">ISBN: 9789605212</span>
                         <span class="price">Τιμή: <span>29,27€</span></span>
                      </div>
                      <p>Στενή είναι η σχέση των μνημείων με την ιστορία των λαών που τα δημιούργησαν. Προσθέτουν αναμφίβολα μια σημαντική μαρτυρία σε ένα πλήθος άλλων ιστορικών δεδομένων και συμπληρώνουν τις γραπτές πηγές, που αποτελούν τον θεμέλιο λίθο της ιστορίας. Τα βυζαντινά μνημεία συγκροτούν ένα μεγάλο κεφάλαιο του ...</p>
-                    <span class="rbottom"><a href="#">Διαβάστε περισσότερα</a>|<a href="#">Προσθήκη στο καλάθι</a></span>
+                    <span class="rbottom"><a href="book_view_2.html">Διαβάστε περισσότερα</a>|<a href="basket.html">Προσθήκη στο καλάθι</a></span>
                 </div>
                 <div id="resultsbottom">
                     <span>Σελίδα:</span>
@@ -155,7 +168,7 @@
                 
                 <div id="bestSeller">
                     
-                    <h2>Best Sellers</h2>
+                    <h2><span lang="en">Best Sellers</span></h2>
                     
                     <div class="bestbooksline">
                         <div class="bestSellerBookpreview">
@@ -199,7 +212,7 @@
             
         </div>
         
-        
+        <span class="hidden"><a href="#top">Μετάβαση στη κορυφή της σελίδας</a></span>
         <!-- Footer -->
         <div id="footer">
             <div id="validators">
@@ -211,7 +224,7 @@
                 </div>
             </div>
         </div>
-        
+        <span class="hidden"><a href="#top">Μετάβαση στη κορυφή της σελίδας</a></span>
     </div>
 </body>
 </html>
