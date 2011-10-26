@@ -545,13 +545,19 @@ width: 1px;
 .errors{
 	display:block;
 	margin-left:5em;
+	margin-bottom:1em;
 }
 
 .errors ol>li{
 	margin-bottom:0.3em;
 }
+.errorsbottom{
+	padding:1.5em;
+}
 
-
+.errorsbottom a:hover{
+	text-decoration:underline !important;
+}
 /* ==================================================================================================================*/
 /* ===========================  START - Added by chris at Tue Oct 25 15:43:59 EEST 2011 =============================*/
 
