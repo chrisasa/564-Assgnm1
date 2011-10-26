@@ -10,10 +10,11 @@
 }
 
 #basketTable {
-    width: 90%;
+    width:95%;
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
+	margin-bottom:2em;
 }
 
 #basketTable a{
@@ -64,5 +65,23 @@
 
 .basketFinalPrices{
 	text-align:left !important;
-	padding-left:3.2em !important;
+	padding-left:3.4em !important;
+}
+
+#basket1next, #basket1back{
+	float:right;
+	margin-right:1em;
+}
+
+#basket1next{
+	margin-right:1.5em;
+}
+
+.nounderline{
+	text-decoration:none!important;
+}
+
+.cart h3{
+	margin-left:1.5em;
+	color:#333333;
 }

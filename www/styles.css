@@ -357,6 +357,10 @@ width: 1px;
     border-bottom:3px double #333333;
 }
 
+#bestSeller p{
+	margin-top:0;
+}
+
 .bestbooksline {
     overflow: auto;
     width: 100%;
