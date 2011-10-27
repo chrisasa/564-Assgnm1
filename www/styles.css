@@ -972,9 +972,13 @@ a:focus{
     font-weight: bold;
 }
 
-#bookCategories li:hover,#bookCategories li a:hover{
+#bookCategories li:hover,#bookCategories li a:hover,#bookCategories li:focus,#bookCategories li a:focus{
     background-color:#ece1e1;
     text-decoration: underline;
+}
+
+#bookCategories a:focus{
+	text-decoration: underline!important;
 }
 
 #bookCategories a{
