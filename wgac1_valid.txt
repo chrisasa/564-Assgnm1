@@ -10,3 +10,6 @@ http://139.91.183.55:8080/www/book_view_2.html
 http://139.91.183.55:8080/www/book_view_2_comment_error.html
 http://139.91.183.55:8080/www/book_image_view_1.html
 http://139.91.183.55:8080/www/book_image_view_2.html
+http://139.91.183.55:8080/www/basket1.html
+http://139.91.183.55:8080/www/basket2.html
+http://139.91.183.55:8080/www/basket3.html

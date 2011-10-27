@@ -1,7 +1,18 @@
-HY-564 
-
-First Assignment
+CS-564 / First Assignment
 
 Developers: 
 - Asaridis Christos
 - Bastakis Stauros
+
+
+Validated by:
+XHTML 1.0    -> http://validator.w3.org/
+CSS 2.1      -> http://jigsaw.w3.org/css-validator/
+WCAG 1.0     ->	http://www.cynthiasays.com/
+AccessColor  -> http://www.accesskeys.org/tools/colorcontrast.html
+
+
+Tested at:
+Accessibility Color Wheel -> http://gmazzocato.altervista.org/colorwheel/wheel.php
+Color Filter 			  -> http://colorfilter.wickline.org/
+Colour Contrast Analyse	  -> http://www.visionaustralia.org.au/info.aspx?page=628

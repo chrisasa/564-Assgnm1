@@ -58,8 +58,8 @@ a:focus{
 }
 
 .gototop{
-	float:right !important;
-	color:#333333;
+    float:right !important;
+    color:#333333;
 }
 /* Header menu partition
 */
@@ -73,7 +73,7 @@ a:focus{
 #sitemap{
     display:block;
     float:right;
-	
+
 }
 
 #sitemap a{
@@ -102,15 +102,15 @@ a:focus{
 #search{
     clear:both;
     float: right;
-	
+
     margin-top: 3em;
-	display:block;
+    display:block;
 }
 
 #search fieldset {
     border:none;
-	padding-right:0;
-	
+    padding-right:0;
+
 }
 
 #search label{
@@ -129,7 +129,7 @@ a:focus{
 
 #searchButton {
     height: 2em;
-	margin-right:0;
+    margin-right:0;
 }
 
 
@@ -978,7 +978,7 @@ a:focus{
 }
 
 #bookCategories a:focus{
-	text-decoration: underline!important;
+    text-decoration: underline!important;
 }
 
 #bookCategories a{
@@ -995,8 +995,8 @@ a:focus{
 }
 
 #activeCatMenu a{
-	color: #ad0101 !important;
-	padding-left:0.5em;
+    color: #ad0101 !important;
+    padding-left:0.5em;
 }
 
 #firstCatMenu {
