@@ -19,10 +19,10 @@
             	<a href="index.html"> <img src="pics/logo.png" alt="Λογότυπο Βιβλιοπολείου Ειρμός" title="Λογότυπο Βιβλιοπολείου Ειρμός"/></a>
             </div>
             <div id="search">
-                <form name="search" action="./results.html" method="post">
-                    <label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
+                <form  action="./results.html" method="post">
+                    <fieldset><label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
                     <input type="text" id="searchField" />
-                    <input type="submit" id="searchButton" title="Εκίνηση Αναζήτησης" value="Αναζήτηση&raquo;" />
+                    <input type="submit" id="searchButton" title="Εκίνηση Αναζήτησης" value="Αναζήτηση&raquo;" /></fieldset>
                     
                 </form>
                 <a href="./search.html">Σύνθετη Αναζήτηση &raquo;</a>
@@ -90,7 +90,7 @@
                 <!-- -->
                 <div id="bookComments">
                     <h2>Σχόλια αναγνωστών</h2>
-                    <div id="comment">
+                    <div class="comment">
                         <span class="comUsername">Christos Asaridis</span>
                         <span class="comRatting">
                             Βαθμολογία:
@@ -99,7 +99,7 @@
                         <span class="comText">Before I began reading this book I was concerned it may be another "the sky is warming, the sky is warming!", greenhouse gas caused disaster novel. One cannot judge a book by its cover however, and I decided to push through. I was pleasantly surprised at the different concept Baxter uses to flood the earth. The book opens in Barcelona where we meet several of the main characters who will we follow through their adventures to survive. I never really understood exactly why these people are hostages. Their backgrounds are rather random from a hostage-takers point of view. Shortly after the introduction of the hostages a rich, visionary mogul appears on the scene with an inexplicable interest in them</span>
                     </div>
                     
-                    <div id="comment">
+                    <div class="comment">
                         <span class="comUsername">Christos Asaridis</span>
                         <span class="comRatting">
                             Βαθμολογία:
@@ -124,13 +124,14 @@
                 <div id="newComment">
                     <h2>Προσθήκη νέου σχόλιου</h2>
 
-                    <fieldset>
+                    <form action="book_view_1.html" method="post">
+                        <fieldset>
 
-                        <legend>
-                          <span>Προσθέστε το δικό σας σχόλιο</span>
-                        </legend>
+                            <legend>
+                              <span>Προσθέστε το δικό σας σχόλιο</span>
+                            </legend>
                         
-                        <form action="book_view_1.html" method="post">
+                        
                             <label for="comments_name">
                                 <span class="hidden">αστερίσκος</span>
                                 <span class="red">* </span>
@@ -168,10 +169,10 @@
                             
                             <input type="submit" value="Υποβολή σχόλιου" title="Υποβολή σχόλιου" id="comment_submit"></input>
                             <input type="reset" value="Καθαρισμός" title="Καθαρισμός Φόρμας" id="comment_reset"></input>
-                        </form>
                         
-                    </fieldset>
-
+                        
+                        </fieldset>
+                    </form>
 
                 </div>
                 
@@ -190,11 +191,11 @@
                 <div id="bookCategories">
                     <h2>Κατηγορίες</h2>
                     <ul>
-                        <a href="./literature_history.html"><li id="firstCatMenu">Τέχνες</li></a>
-                        <a href="./literature_history.html"><li>Μυθυστορήματα</li></a>
-                        <a href="./literature_history.html"><li>Βιογραφίες</li></a>
+                        <li id="firstCatMenu"><a href="./literature_history.html">Τέχνες</a></li>
+                        <li><a href="./literature_history.html">Μυθυστορήματα</a></li>
+                        <li><a href="./literature_history.html">Βιογραφίες</a></li>
                         <li id="activeCatMenu">Φαντασίας</li>
-                        <a href="./literature_history.html"><li>Ιστορία</li></a>
+                        <li><a href="./literature_history.html">Ιστορία</a></li>
                     </ul>
                 </div>
                 

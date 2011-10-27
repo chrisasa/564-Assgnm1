@@ -103,6 +103,10 @@ width: 1px;
     margin-top: 3.5em;
 }
 
+#search fieldset {
+    border-style:none;
+}
+
 #search label{
     position: absolute;
     left: -10000px;
@@ -125,7 +129,7 @@ width: 1px;
 #search a{
     float:right;
     display: block;
-    margin-top: 0.7em;
+    margin-top: 0.2em;
     text-decoration:none;
     color:#333333;
 }
@@ -760,7 +764,7 @@ width: 1px;
     border-bottom:1px solid #333333;
 }
 
-#comment {
+.comment {
     border-bottom: 1px dashed black;
     padding-bottom: 1em;
     margin-top: 0.2em;
@@ -946,14 +950,15 @@ width: 1px;
     border-bottom: 1px dotted #ad0101;
 }
 
-#bookCategories a li{
+#bookCategories li a{
+    display: block;
     text-decoration:none;
     font-size: 1.2em;
     color: #333333;
     font-weight: bold;
 }
 
-#bookCategories a li:hover{
+#bookCategories li:hover,#bookCategories li a:hover{
     background-color:#ece1e1;
     text-decoration: underline;
 }
@@ -970,6 +975,7 @@ width: 1px;
     padding-top: 0.5em !important;
     background-color: #ece1e1 !important;
     color: #ad0101 !important;
+    text-decoration: none !important;
 }
 
 #firstCatMenu {

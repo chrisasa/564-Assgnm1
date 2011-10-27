@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<a name="top"></a>
+	<div><a name="top"></a></div>
 	<ul class="hidden">
     	<li><a href="#content">Μετάβαση στo περιεχόμενο</a></li>
         <li><a href="#search">Μετάβαση στην αναζήτηση</a></li>
@@ -32,10 +32,10 @@
             </div>
             <a name="search"></a>
             <div id="search">
-                <form name="input" action="results.html" method="get">
-                    <label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
+                <form action="results.html" method="get">
+                    <fieldset><label for="searchField">Αναζήτηση:</label> <!--h44 rule-->
                     <input type="text" id="searchField" />
-                    <input type="submit" id="searchButton" title="Εκκίνηση αναζήτησης" value="Αναζήτηση&raquo;" />
+                    <input type="submit" id="searchButton" title="Εκκίνηση αναζήτησης" value="Αναζήτηση&raquo;" /></fieldset>
                     
                 </form>
                 <a href="search.html">Σύνθετη Αναζήτηση &raquo;</a>
@@ -79,7 +79,7 @@
                         </ol>
                     </div>
                 </div>
-                <form id="detailedsearchform" name="detailedsearch" action="results.html" method="post">
+                <form id="detailedsearchform"  action="results.html" method="post">
               		<fieldset>
                     <legend>Εισάγετε τα πεδία της σύνθετης αναζήτησης</legend>
                     <p>Η συμπλήρωση των πεδίων με την ένδειξη αστερίσκος <span class="red">*</span> είναι υποχρεωτική.</p>
