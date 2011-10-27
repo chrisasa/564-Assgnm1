@@ -58,7 +58,10 @@ a:focus{
     overflow:auto;
 }
 
-
+#gototop{
+	float:right !important;
+	color:#333333;
+}
 /* Header menu partition
 */
 
@@ -71,7 +74,7 @@ a:focus{
 #sitemap{
     display:block;
     float:right;
-
+	
 }
 
 #sitemap a{
@@ -100,11 +103,15 @@ a:focus{
 #search{
     clear:both;
     float: right;
-    margin-top: 3.5em;
+	
+    margin-top: 3em;
+	display:block;
 }
 
 #search fieldset {
-    border-style:none;
+    border:none;
+	padding-right:0;
+	
 }
 
 #search label{
@@ -122,7 +129,8 @@ a:focus{
 }
 
 #searchButton {
-    height: 2.2em;
+    height: 2em;
+	margin-right:0;
 }
 
 
@@ -973,15 +981,18 @@ a:focus{
     text-decoration:none !important;
 }
 
-#activeCatMenu {
-    list-style-image: url("pics/list-arrow.gif");
-    list-style-position:inside;
-    font-size: 1.2em;
+#activeCatMenu{
+    font-size: 1em;
     font-weight: bold;
     padding-top: 0.5em !important;
     background-color: #ece1e1 !important;
     color: #ad0101 !important;
     text-decoration: none !important;
+}
+
+#activeCatMenu a{
+	color: #ad0101 !important;
+	padding-left:0.5em;
 }
 
 #firstCatMenu {
