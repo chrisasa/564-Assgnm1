@@ -1,0 +1,12 @@
+http://139.91.183.55:8080/www/index.html
+http://139.91.183.55:8080/www/literature.html
+http://139.91.183.55:8080/www/literature_history.html
+http://139.91.183.55:8080/www/sitemap.html
+http://139.91.183.55:8080/www/results.html
+http://139.91.183.55:8080/www/search.html
+http://139.91.183.55:8080/www/search_false.html
+http://139.91.183.55:8080/www/book_view_1.html
+http://139.91.183.55:8080/www/book_view_2.html
+http://139.91.183.55:8080/www/book_view_2_comment_error.html
+http://139.91.183.55:8080/www/book_image_view_1.html
+http://139.91.183.55:8080/www/book_image_view_2.html
