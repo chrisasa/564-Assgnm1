@@ -53,7 +53,7 @@ width: 1px;
 
 #wrapper{
 	max-width: 1014px;
-	min-width: 830px;
+	min-width: 900px;
 	margin: 0 auto;
 	overflow:auto;
 }
@@ -498,6 +498,10 @@ width: 1px;
 }
 #sortform{
 	float:right;
+}
+
+#sort{
+	border:1px solid #333333;
 }
 
 #resultsbottom{
@@ -952,6 +956,10 @@ width: 1px;
 #bookCategories a li:hover{
     background-color:#ece1e1;
     text-decoration: underline;
+}
+
+#bookCategories a{
+	text-decoration:none !important;
 }
 
 #activeCatMenu {
