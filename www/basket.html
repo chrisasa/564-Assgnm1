@@ -43,8 +43,8 @@
         
         <!-- Sub menu -->
         <div id="submenu">
-			<span id="path">Βρίσκεστε: Καλάθι αγορών</span>
-                        <a id="basket" href="#"><span>Το καλάθι μου</span> ( 3 προϊόντα <span>229,27 €</span> )</a>
+            <span id="path">Βρίσκεστε: Καλάθι αγορών</span>
+            <span id="basket"><img src="pics/shopping_cart.jpg" alt="" /><a href="basket.html"><span>Το καλάθι μου</span> ( 0 προϊόντα <span>0,00 €</span> )</a></span>
         </div>
         
         
@@ -55,61 +55,64 @@
             <h2>Το καλάθι μου</h2>
             <div class="cart"> 
                 <h3>Βήμα 1 από 4 :: Προεπισκόπιση καλαθιού</h3>
-                        <form name="gotostep2" action="basket2.html" method="post">
-                        <table id="basketTable">
+                        <form  action="basket2.html" method="post">
                             
-                            <caption><span class="hidden">Το καλάθι αγορών σας περιέχει 3 προιόντα με συνολικό κόστος 229.27 ευρώ.</span></caption>
-                            
-                            <tr id="basketHeaderRow">
-                                <th id="Cov">Εξώφυλλο</th>
-                                <th id="Tit">Τίτλος</th>
-                                <th id="Timi">Τιμή</th>
-                                <th id="Pos">Ποσότητα</th>
-                                <th id="SbVal">Υποσύνολο</th>
-                                <th id="Rm">&nbsp;<span class="hidden">Αφαίρεση</span></th>
-                            </tr>
-                            <tr class="basketProductsRow">
-                                <td headers="Cov"><a href="book_view_1.html"><img src="imgbooks/book_3.jpg" alt="Εξώφιλο βιβλίου Steve Jobs - Ισάακ Ομέρτ" title="Steve Jobs - Ισάακ Ομέρτ"/></a></td>
-                                <td headers="Tit"><a href="book_view_1.html"><span class="bold">"Steve Jobs"</span></a></td>
-                                <td headers="Timi">29,27€</td>
-                                <td headers="Pos"><input type="text" name="product_quantity" maxlength="3" value="2" class="product_quantity" /></td>
-                                <td headers="SbVal">68,27€</td>
-                                <td headers="Rm"><input type="button" value="Διαγραφή" title="Διαγραφή προιόντος" /></td>
-                            </tr>
-                            
-                            <tr class="basketProductsRow">
-                                <td headers="Cov"><a href="book_view_1.html"><img src="imgbooks/book_1.jpg" alt="Εξώφιλο βιβλίου ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" title="ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" /></a></td>
-                                <td headers="Tit"><a href="book_view_1.html"><span class="bold">"ΚΑΤΑΚΛΥΣΜΟΣ"</span></a></td>
-                                <td headers="Timi">29,27€</td>
-                                <td headers="Pos"><input type="text" name="product_quantity" maxlength="3" value="1" class="product_quantity"></input></td>
-                                <td headers="SbVal">29,27€</td>
-                                <td headers="Rm"><input type="button" value="Διαγραφή" title="Διαγραφή προιόντος" /></td>
-                            </tr>
-                            
-                            <tr class="basketProductsRow">
-                                <td headers="Cov"><a href="book_view_2.html"><img src="imgbooks/book_2.jpg" alt="Εξώφιλο βιβλίου ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" title="ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" /></a></td>
-                                <td headers="Tit"><a href="book_view_2.html"><span class="bold">"Καρλ Μαρξ"</span></a></td>
-                                <td headers="Timi">29,27€</td>
-                                <td headers="Pos"><input type="text" name="product_quantity" maxlength="3" value="1" class="product_quantity"></input></td>
-                                <td headers="SbVal">29,27€</td>
-                                <td headers="Rm"><input type="button" value="Διαγραφή" title="Διαγραφή προιόντος" /></td>
-                            </tr>
-                            <tr class="basketSumRow">
-                                <td colspan="4">Σύνολο:</td>
-                                <td colspan="2" class="basketFinalPrices">29,27€</td>
-                            </tr>
-                            <tr class="basketSumRow">
-                                <td colspan="4">Μεταφορικά:</td>
-                                <td colspan="2" class="basketFinalPrices">29,27€</td>
-                            </tr>
-                            <tr class="basketSumRow" id="basketlast">
-                                <td colspan="4" class="bold">Τελικό σύνολο:</td>
-                                <td colspan="2" class="basketFinalPrices"><span class="bold">229,27€</span></td>
-                            </tr>
-                            
-                        </table>
-                        <input type="submit" id="basket1next" value="Επόμενο βήμα&raquo;" title="Συνέχεια στο βήμα 2-Επιβεβαίωσης προιόντων" />
-                        <a class="nounderline" href="index.html"><input type="button" id="basket1back" value="&laquo;Συνέχεια αγορών" title="Συνεχίστε τις αγορές σας" /></a>
+                            <fieldset>
+                                <table id="basketTable">
+
+                                    <caption><span class="hidden">Το καλάθι αγορών σας περιέχει 3 προιόντα με συνολικό κόστος 229.27 ευρώ.</span></caption>
+
+                                    <tr id="basketHeaderRow">
+                                        <th id="Cov">Εξώφυλλο</th>
+                                        <th id="Tit">Τίτλος</th>
+                                        <th id="Timi">Τιμή</th>
+                                        <th id="Pos">Ποσότητα</th>
+                                        <th id="SbVal">Υποσύνολο</th>
+                                        <th id="Rm">&nbsp;<span class="hidden">Αφαίρεση</span></th>
+                                    </tr>
+                                    <tr class="basketProductsRow">
+                                        <td headers="Cov"><a href="book_view_1.html"><img src="imgbooks/book_3.jpg" alt="Εξώφιλο βιβλίου Steve Jobs - Ισάακ Ομέρτ" title="Steve Jobs - Ισάακ Ομέρτ"/></a></td>
+                                        <td headers="Tit"><a href="book_view_1.html"><span class="bold">"Steve Jobs"</span></a></td>
+                                        <td headers="Timi">29,27€</td>
+                                        <td headers="Pos"><input type="text" name="product_quantity" maxlength="3" value="2" class="product_quantity" /></td>
+                                        <td headers="SbVal">68,27€</td>
+                                        <td headers="Rm"><input type="button" value="Διαγραφή" title="Διαγραφή προιόντος" /></td>
+                                    </tr>
+
+                                    <tr class="basketProductsRow">
+                                        <td headers="Cov"><a href="book_view_1.html"><img src="imgbooks/book_1.jpg" alt="Εξώφιλο βιβλίου ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" title="ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" /></a></td>
+                                        <td headers="Tit"><a href="book_view_1.html"><span class="bold">"ΚΑΤΑΚΛΥΣΜΟΣ"</span></a></td>
+                                        <td headers="Timi">29,27€</td>
+                                        <td headers="Pos"><input type="text" name="product_quantity" maxlength="3" value="1" class="product_quantity"></input></td>
+                                        <td headers="SbVal">29,27€</td>
+                                        <td headers="Rm"><input type="button" value="Διαγραφή" title="Διαγραφή προιόντος" /></td>
+                                    </tr>
+
+                                    <tr class="basketProductsRow">
+                                        <td headers="Cov"><a href="book_view_2.html"><img src="imgbooks/book_2.jpg" alt="Εξώφιλο βιβλίου ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" title="ΚΑΤΑΚΛΥΣΜΟΣ - Μπάξτερ Στεφεν" /></a></td>
+                                        <td headers="Tit"><a href="book_view_2.html"><span class="bold">"Καρλ Μαρξ"</span></a></td>
+                                        <td headers="Timi">29,27€</td>
+                                        <td headers="Pos"><input type="text" name="product_quantity" maxlength="3" value="1" class="product_quantity"></input></td>
+                                        <td headers="SbVal">29,27€</td>
+                                        <td headers="Rm"><input type="button" value="Διαγραφή" title="Διαγραφή προιόντος" /></td>
+                                    </tr>
+                                    <tr class="basketSumRow">
+                                        <td colspan="4">Σύνολο:</td>
+                                        <td colspan="2" class="basketFinalPrices">29,27€</td>
+                                    </tr>
+                                    <tr class="basketSumRow">
+                                        <td colspan="4">Μεταφορικά:</td>
+                                        <td colspan="2" class="basketFinalPrices">29,27€</td>
+                                    </tr>
+                                    <tr class="basketSumRow" id="basketlast">
+                                        <td colspan="4" class="bold">Τελικό σύνολο:</td>
+                                        <td colspan="2" class="basketFinalPrices"><span class="bold">229,27€</span></td>
+                                    </tr>
+
+                                </table>
+                                <input type="submit" id="basket1next" value="Επόμενο βήμα&raquo;" title="Συνέχεια στο βήμα 2-Επιβεβαίωσης προιόντων" />
+                                <a class="nounderline" href="index.html"><input type="button" id="basket1back" value="&laquo;Συνέχεια αγορών" title="Συνεχίστε τις αγορές σας" /></a>
+                            </fieldset>
                         </form>
                                         
                         
@@ -121,7 +124,7 @@
             
             <div id="leftcolumn">
                 
-                <div id="bestSeller">
+                <div id="deiteEpisis">
                     
                     <h2>Δείτε επίσης</h2>
                     
