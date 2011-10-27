@@ -58,7 +58,7 @@ a:focus{
     overflow:auto;
 }
 
-#gototop{
+.gototop{
 	float:right !important;
 	color:#333333;
 }
