@@ -63,18 +63,18 @@
             <a name="content"></a>
             <!-- Main page-->
             <div id="main">
-                <div id="leftcolumn">
+                <div class="leftcolumn">
 
                     <!-- -->
 
                     <div id="bookCategories">
                         <h2>Κατηγορίες</h2>
                         <ul>
-                            <a href="./literature_history.html"><li id="firstCatMenu">Τέχνες</li></a>
-                            <a href="./literature_history.html"><li>Μυθυστορήματα</li></a>
-                            <a href="./literature_history.html"><li>Βιογραφίες</li></a>
-                            <a href="./literature_history.html"><li>Φαντασίας</li></a>
-                            <li id="activeCatMenu">Ιστορία</li>
+                            <li id="firstCatMenu"><a href="./literature_history.html">Τέχνες</a></li>
+                            <li><a href="./literature_history.html">Μυθυστορήματα</a></li>
+                            <li><a href="./literature_history.html">Βιογραφίες</a></li>
+                            <li><a href="./literature_history.html">Φαντασίας</a></li>
+                            <li><a href="./literature_history.html">Ιστορία</a></li>
                         </ul>
                     </div>
                 </div>
@@ -82,17 +82,19 @@
                     <div class="resultstop">
                         <div id="found">Βιβλία της <span class="bold">Ιστορίας</span></div>
                         <form id="sortform" action="http://results.html" method="post">
-                            <label for="sort">Ταξινόμηση:</label>
-                            <select name="sort" id="sort">
-                                <option value="1">Συνάφεια</option>
-                                <option value="2">Τιμή Αύξουσα</option>
-                                <option value="3">Τιμή Φθίνουσα</option> 
-                                <option value="4">Αλφαβητικά(Α-Ω, A-W)</option>
-                                <option value="5">Αλφαβητικά(W-A, Ω-Α)</option>
-                                <option value="6">Ημερομηνία έκδοσης</option>
-                                <option value="7">Περισσότερες πωλήσεις</option>
-                            </select>
-                            <input type="button" value="Εύρεση" />
+                            <fieldset>
+                                <label for="sort">Ταξινόμηση:</label>
+                                <select name="sort" id="sort">
+                                    <option value="1">Συνάφεια</option>
+                                    <option value="2">Τιμή Αύξουσα</option>
+                                    <option value="3">Τιμή Φθίνουσα</option> 
+                                    <option value="4">Αλφαβητικά(Α-Ω, A-W)</option>
+                                    <option value="5">Αλφαβητικά(W-A, Ω-Α)</option>
+                                    <option value="6">Ημερομηνία έκδοσης</option>
+                                    <option value="7">Περισσότερες πωλήσεις</option>
+                                </select>
+                                <input type="button" value="Εύρεση" />
+                            </fieldset>
                         </form>
                     </div>
                     <div class="resultbox">
@@ -178,7 +180,7 @@
                     </div>
                 </div>
 
-                <div id="leftcolumn">
+                <div class="leftcolumn">
 
 
                     <!-- -->

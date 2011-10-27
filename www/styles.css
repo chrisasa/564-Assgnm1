@@ -243,7 +243,7 @@ a:focus{
 
 /*  Left column partition
 */
-#leftcolumn{
+.leftcolumn{
 
     width:19%;
     border-right:1px solid #333333;
@@ -502,6 +502,12 @@ a:focus{
 }
 #sortform{
     float:right;
+}
+
+#sortform fieldset {
+    border-style: none;
+    padding-top: 0.3em;
+    padding-bottom: 0;
 }
 
 #sort{
